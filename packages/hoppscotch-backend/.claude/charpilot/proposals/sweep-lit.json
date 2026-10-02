@@ -1,0 +1,1131 @@
+{
+ "stage": "3-proposals",
+ "authoredBy": "sweep",
+ "note": "SWEEP, MEASURED. Each row's `reaches` is exactly the open sides its own recording moved after setup (sweep.mjs litProposals). Written by the sweep, not by an agent.",
+ "proposals": [
+  {
+   "id": "sweep-lit-src-auth-helper-ts-89-entry-0-0",
+   "functionId": "src/auth/helper.ts:89:subscriptionContextCookieParser",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/helper.ts#92:if:0",
+    "src/auth/helper.ts#93:binary-expr:0"
+   ],
+   "args": [
+    {
+     "value": "\"tok\"",
+     "from": {
+      "arm": "src/auth/helper.ts#92:if:0",
+      "evidence": "src/auth/helper.ts:92",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#92:if:0 [then]; src/auth/helper.ts#93:binary-expr:0 [!cookies[AuthTokenType.ACCESS_TOKEN], !cookies[AuthTokenType.REFRESH_TOKEN]] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "cookie": {
+     "module": "cookie",
+     "imported": "*",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#92:if:0",
+      "evidence": "src/auth/helper.ts:92",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "HttpException": {
+     "module": "@nestjs/common",
+     "imported": "HttpException",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#92:if:0",
+      "evidence": "src/auth/helper.ts:92",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "COOKIES_NOT_FOUND": {
+     "module": "src/errors",
+     "imported": "COOKIES_NOT_FOUND",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#92:if:0",
+      "evidence": "src/auth/helper.ts:92",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/auth/helper.ts#92:if:0": [
+     "then"
+    ],
+    "src/auth/helper.ts#93:binary-expr:0": [
+     "!cookies[AuthTokenType.ACCESS_TOKEN]",
+     "!cookies[AuthTokenType.REFRESH_TOKEN]"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-helper-ts-113-entry-0-0",
+   "functionId": "src/auth/helper.ts:113:authProviderCheck",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/helper.ts#117:if:0",
+    "src/auth/helper.ts#121:binary-expr:0",
+    "src/auth/helper.ts#123:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#117:if:0 [else]; src/auth/helper.ts#121:binary-expr:0 [VITE_ALLOWED_AUTH_PROVIDERS?.split(',')]; src/auth/helper.ts#123:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#117:if:0 [else]; src/auth/helper.ts#121:binary-expr:0 [VITE_ALLOWED_AUTH_PROVIDERS?.split(',')]; src/auth/helper.ts#123:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "throwErr": {
+     "module": "src/utils",
+     "imported": "throwErr",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "AUTH_PROVIDER_NOT_SPECIFIED": {
+     "module": "src/errors",
+     "imported": "AUTH_PROVIDER_NOT_SPECIFIED",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/auth/helper.ts#117:if:0": [
+     "else"
+    ],
+    "src/auth/helper.ts#121:binary-expr:0": [
+     "VITE_ALLOWED_AUTH_PROVIDERS?.split(',')"
+    ],
+    "src/auth/helper.ts#123:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-helper-ts-113-entry-0-9",
+   "functionId": "src/auth/helper.ts:113:authProviderCheck",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/helper.ts#117:if:0"
+   ],
+   "args": [
+    {
+     "build": "undefined",
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#117:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"\"",
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#117:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "throwErr": {
+     "module": "src/utils",
+     "imported": "throwErr",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "AUTH_PROVIDER_NOT_SPECIFIED": {
+     "module": "src/errors",
+     "imported": "AUTH_PROVIDER_NOT_SPECIFIED",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#117:if:0",
+      "evidence": "src/auth/helper.ts:117",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/auth/helper.ts#117:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-helper-ts-133-entry-0-0",
+   "functionId": "src/auth/helper.ts:133:extractCookieAsKeyValuesFromHeaders",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/helper.ts#137:binary-expr:0",
+    "src/auth/helper.ts#139:if:0"
+   ],
+   "args": [
+    {
+     "build": "{}",
+     "from": {
+      "arm": "src/auth/helper.ts#137:binary-expr:0",
+      "evidence": "src/auth/helper.ts:137",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#137:binary-expr:0 [headers['cookie'], headers['Cookie'], headers['COOKIE']]; src/auth/helper.ts#139:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "HttpException": {
+     "module": "@nestjs/common",
+     "imported": "HttpException",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#137:binary-expr:0",
+      "evidence": "src/auth/helper.ts:137",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "COOKIES_NOT_FOUND": {
+     "module": "src/errors",
+     "imported": "COOKIES_NOT_FOUND",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#137:binary-expr:0",
+      "evidence": "src/auth/helper.ts:137",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/auth/helper.ts#137:binary-expr:0": [
+     "headers['cookie']",
+     "headers['Cookie']",
+     "headers['COOKIE']"
+    ],
+    "src/auth/helper.ts#139:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-helper-ts-215-entry-0-0",
+   "functionId": "src/auth/helper.ts:215:extractAccessTokenFromAuthRecords",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/helper.ts#218:binary-expr:0",
+    "src/auth/helper.ts#219:if:0"
+   ],
+   "args": [
+    {
+     "build": "{}",
+     "from": {
+      "arm": "src/auth/helper.ts#218:binary-expr:0",
+      "evidence": "src/auth/helper.ts:218",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/helper.ts#218:binary-expr:0 [headers['authorization'], headers['Authorization']]; src/auth/helper.ts#219:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "HttpException": {
+     "module": "@nestjs/common",
+     "imported": "HttpException",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#218:binary-expr:0",
+      "evidence": "src/auth/helper.ts:218",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "AUTH_HEADER_NOT_FOUND": {
+     "module": "src/errors",
+     "imported": "AUTH_HEADER_NOT_FOUND",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#218:binary-expr:0",
+      "evidence": "src/auth/helper.ts:218",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "INVALID_AUTH_HEADER": {
+     "module": "src/errors",
+     "imported": "INVALID_AUTH_HEADER",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/helper.ts#218:binary-expr:0",
+      "evidence": "src/auth/helper.ts:218",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/auth/helper.ts#218:binary-expr:0": [
+     "headers['authorization']",
+     "headers['Authorization']"
+    ],
+    "src/auth/helper.ts#219:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-0",
+   "functionId": "src/auth/redirect-uri.validator.ts:4:isValidLocalhostRedirectUri",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/redirect-uri.validator.ts#7:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"http://localhost:3000\"",
+     "from": {
+      "arm": "src/auth/redirect-uri.validator.ts#7:if:0",
+      "evidence": "src/auth/redirect-uri.validator.ts:7",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/redirect-uri.validator.ts#7:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/auth/redirect-uri.validator.ts#7:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-4",
+   "functionId": "src/auth/redirect-uri.validator.ts:4:isValidLocalhostRedirectUri",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/redirect-uri.validator.ts#7:if:0"
+   ],
+   "args": [
+    {
+     "build": "undefined",
+     "from": {
+      "arm": "src/auth/redirect-uri.validator.ts#7:if:0",
+      "evidence": "src/auth/redirect-uri.validator.ts:7",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/redirect-uri.validator.ts#7:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/auth/redirect-uri.validator.ts#7:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-auth-stateless-state-store-ts-51-entry-0-0",
+   "functionId": "src/auth/stateless-state-store.ts:51:StatelessStateStore.constructor",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/auth/stateless-state-store.ts#57:if:0",
+    "src/auth/stateless-state-store.ts#67:binary-expr:0",
+    "src/auth/stateless-state-store.ts#69:binary-expr:0",
+    "src/auth/stateless-state-store.ts#70:binary-expr:0"
+   ],
+   "args": [
+    {
+     "value": "\"tok\"",
+     "from": {
+      "arm": "src/auth/stateless-state-store.ts#57:if:0",
+      "evidence": "src/auth/stateless-state-store.ts:57",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/stateless-state-store.ts#57:if:0 [else]; src/auth/stateless-state-store.ts#67:binary-expr:0 [secret]; src/auth/stateless-state-store.ts#69:binary-expr:0 [cookieName]; src/auth/stateless-state-store.ts#70:binary-expr:0 [secureCookies] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "0",
+     "from": {
+      "arm": "src/auth/stateless-state-store.ts#57:if:0",
+      "evidence": "src/auth/stateless-state-store.ts:57",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/stateless-state-store.ts#57:if:0 [else]; src/auth/stateless-state-store.ts#67:binary-expr:0 [secret]; src/auth/stateless-state-store.ts#69:binary-expr:0 [cookieName]; src/auth/stateless-state-store.ts#70:binary-expr:0 [secureCookies] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"tok\"",
+     "from": {
+      "arm": "src/auth/stateless-state-store.ts#57:if:0",
+      "evidence": "src/auth/stateless-state-store.ts:57",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/stateless-state-store.ts#57:if:0 [else]; src/auth/stateless-state-store.ts#67:binary-expr:0 [secret]; src/auth/stateless-state-store.ts#69:binary-expr:0 [cookieName]; src/auth/stateless-state-store.ts#70:binary-expr:0 [secureCookies] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "true",
+     "from": {
+      "arm": "src/auth/stateless-state-store.ts#57:if:0",
+      "evidence": "src/auth/stateless-state-store.ts:57",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/auth/stateless-state-store.ts#57:if:0 [else]; src/auth/stateless-state-store.ts#67:binary-expr:0 [secret]; src/auth/stateless-state-store.ts#69:binary-expr:0 [cookieName]; src/auth/stateless-state-store.ts#70:binary-expr:0 [secureCookies] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "process.env.NODE_ENV": {
+     "module": "process",
+     "imported": "env",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/auth/stateless-state-store.ts#57:if:0",
+      "evidence": "src/auth/stateless-state-store.ts:57",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/auth/stateless-state-store.ts#57:if:0": [
+     "else"
+    ],
+    "src/auth/stateless-state-store.ts#67:binary-expr:0": [
+     "secret"
+    ],
+    "src/auth/stateless-state-store.ts#69:binary-expr:0": [
+     "cookieName"
+    ],
+    "src/auth/stateless-state-store.ts#70:binary-expr:0": [
+     "secureCookies"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-mailer-helper-ts-17-entry-0-0",
+   "functionId": "src/mailer/helper.ts:17:getMailerAddressFrom",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/mailer/helper.ts#18:binary-expr:0"
+   ],
+   "args": [
+    {
+     "value": "null",
+     "from": {
+      "arm": "src/mailer/helper.ts#18:binary-expr:0",
+      "evidence": "src/mailer/helper.ts:18",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/mailer/helper.ts#18:binary-expr:0 [env.INFRA.MAILER_ADDRESS_FROM] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "throwErr": {
+     "module": "src/utils",
+     "imported": "throwErr",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/mailer/helper.ts#18:binary-expr:0",
+      "evidence": "src/mailer/helper.ts:18",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "MAILER_SMTP_URL_UNDEFINED": {
+     "module": "src/errors",
+     "imported": "MAILER_SMTP_URL_UNDEFINED",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/mailer/helper.ts#18:binary-expr:0",
+      "evidence": "src/mailer/helper.ts:18",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/mailer/helper.ts#18:binary-expr:0": [
+     "env.INFRA.MAILER_ADDRESS_FROM"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-mock-server-constants-mock-server-coll-request-example-ts-5-entry-0-4",
+   "functionId": "src/mock-server/constants/mock-server-coll-request-example.ts:5:mockServerCollRequestExample",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0"
+   ],
+   "args": [
+    {
+     "build": "undefined",
+     "from": {
+      "arm": "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0",
+      "evidence": "src/mock-server/constants/mock-server-coll-request-example.ts:6",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0 [collectionName falls back to its default] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0": [
+     "collectionName falls back to its default"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-30-entry-0-0",
+   "functionId": "src/utils.ts:30:parseIntSafe",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#33:if:0",
+    "src/utils.ts#35:cond-expr:0"
+   ],
+   "args": [
+    {
+     "value": "null",
+     "from": {
+      "arm": "src/utils.ts#33:if:0",
+      "evidence": "src/utils.ts:33",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#33:if:0 [else]; src/utils.ts#35:cond-expr:0 [whenFalse] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#33:if:0": [
+     "else"
+    ],
+    "src/utils.ts#35:cond-expr:0": [
+     "whenFalse"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-185-entry-0-0",
+   "functionId": "src/utils.ts:185:validateSMTPEmail",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#188:binary-expr:0"
+   ],
+   "args": [
+    {
+     "value": "\"a@b.co\"",
+     "from": {
+      "arm": "src/utils.ts#188:binary-expr:0",
+      "evidence": "src/utils.ts:188",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#188:binary-expr:0 [emailRegex1.test(email), emailRegex2.test(email), emailRegex3.test(email)] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#188:binary-expr:0": [
+     "emailRegex1.test(email)",
+     "emailRegex2.test(email)",
+     "emailRegex3.test(email)"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-199-entry-0-0",
+   "functionId": "src/utils.ts:199:validateSMTPUrl",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#206:binary-expr:0",
+    "src/utils.ts#206:if:0",
+    "src/utils.ts#208:if:0",
+    "src/utils.ts#209:if:0",
+    "src/utils.ts#210:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"http://localhost:3000\"",
+     "from": {
+      "arm": "src/utils.ts#206:binary-expr:0",
+      "evidence": "src/utils.ts:206",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#206:binary-expr:0 [!url, url.length === 0]; src/utils.ts#206:if:0 [else]; src/utils.ts#208:if:0 [else]; src/utils.ts#209:if:0 [else]; src/utils.ts#210:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#206:binary-expr:0": [
+     "!url",
+     "url.length === 0"
+    ],
+    "src/utils.ts#206:if:0": [
+     "else"
+    ],
+    "src/utils.ts#208:if:0": [
+     "else"
+    ],
+    "src/utils.ts#209:if:0": [
+     "else"
+    ],
+    "src/utils.ts#210:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-199-entry-0-4",
+   "functionId": "src/utils.ts:199:validateSMTPUrl",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#206:if:0"
+   ],
+   "args": [
+    {
+     "build": "undefined",
+     "from": {
+      "arm": "src/utils.ts#206:if:0",
+      "evidence": "src/utils.ts:206",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#206:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#206:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-261-entry-0-0",
+   "functionId": "src/utils.ts:261:isValidLength",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#262:binary-expr:0",
+    "src/utils.ts#262:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/utils.ts#262:binary-expr:0",
+      "evidence": "src/utils.ts:262",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#262:binary-expr:0 [!title, title.trim() === '', title.length < length]; src/utils.ts#262:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "0",
+     "from": {
+      "arm": "src/utils.ts#262:binary-expr:0",
+      "evidence": "src/utils.ts:262",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#262:binary-expr:0 [!title, title.trim() === '', title.length < length]; src/utils.ts#262:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#262:binary-expr:0": [
+     "!title",
+     "title.trim() === ''",
+     "title.length < length"
+    ],
+    "src/utils.ts#262:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-278-entry-0-0",
+   "functionId": "src/utils.ts:278:escapeSqlLikeString",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#279:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/utils.ts#279:if:0",
+      "evidence": "src/utils.ts:279",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#279:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#279:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-278-entry-0-0-via-1",
+   "functionId": "src/utils.ts:281:<arg1 of str.replace>",
+   "via": "src/utils.ts:278:escapeSqlLikeString",
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#282:switch:0"
+   ],
+   "args": [
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/utils.ts#282:switch:0",
+      "evidence": "src/utils.ts:282",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#282:switch:0 [case '\"', case \"'\", case '\\\\', case '%'] after setup, driving src/utils.ts:278:escapeSqlLikeString. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#282:switch:0": [
+     "case '\"'",
+     "case \"'\"",
+     "case '\\\\'",
+     "case '%'"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-311-entry-0-0",
+   "functionId": "src/utils.ts:311:calculateExpirationDate",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#312:if:0"
+   ],
+   "args": [
+    {
+     "value": "0",
+     "from": {
+      "arm": "src/utils.ts#312:if:0",
+      "evidence": "src/utils.ts:312",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#312:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#312:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-323-entry-0-0",
+   "functionId": "src/utils.ts:323:transformCollectionData",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#326:if:0",
+    "src/utils.ts#330:cond-expr:0"
+   ],
+   "args": [
+    {
+     "value": "\"{}\"",
+     "from": {
+      "arm": "src/utils.ts#326:if:0",
+      "evidence": "src/utils.ts:326",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#326:if:0 [else]; src/utils.ts#330:cond-expr:0 [whenTrue] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {},
+   "reaches": {
+    "src/utils.ts#326:if:0": [
+     "else"
+    ],
+    "src/utils.ts#330:cond-expr:0": [
+     "whenTrue"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-344-entry-0-0",
+   "functionId": "src/utils.ts:344:encrypt",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#345:if:0",
+    "src/utils.ts#347:binary-expr:0",
+    "src/utils.ts#347:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/utils.ts#345:if:0",
+      "evidence": "src/utils.ts:345",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#345:if:0 [else]; src/utils.ts#347:binary-expr:0 [!text, text === '']; src/utils.ts#347:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/utils.ts#345:if:0",
+      "evidence": "src/utils.ts:345",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#345:if:0 [else]; src/utils.ts#347:binary-expr:0 [!text, text === '']; src/utils.ts#347:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY": {
+     "module": "./errors",
+     "imported": "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#345:if:0",
+      "evidence": "src/utils.ts:345",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "crypto": {
+     "module": "crypto",
+     "imported": "*",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#345:if:0",
+      "evidence": "src/utils.ts:345",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/utils.ts#345:if:0": [
+     "else"
+    ],
+    "src/utils.ts#347:binary-expr:0": [
+     "!text",
+     "text === ''"
+    ],
+    "src/utils.ts#347:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-344-entry-0-9",
+   "functionId": "src/utils.ts:344:encrypt",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#347:if:0"
+   ],
+   "args": [
+    {
+     "build": "undefined",
+     "from": {
+      "arm": "src/utils.ts#347:if:0",
+      "evidence": "src/utils.ts:347",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#347:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"\"",
+     "from": {
+      "arm": "src/utils.ts#347:if:0",
+      "evidence": "src/utils.ts:347",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#347:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY": {
+     "module": "./errors",
+     "imported": "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#347:if:0",
+      "evidence": "src/utils.ts:347",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "crypto": {
+     "module": "crypto",
+     "imported": "*",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#347:if:0",
+      "evidence": "src/utils.ts:347",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/utils.ts#347:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-366-entry-0-0",
+   "functionId": "src/utils.ts:366:decrypt",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#370:if:0",
+    "src/utils.ts#372:binary-expr:0",
+    "src/utils.ts#372:if:0"
+   ],
+   "args": [
+    {
+     "value": "\"tok\"",
+     "from": {
+      "arm": "src/utils.ts#370:if:0",
+      "evidence": "src/utils.ts:370",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#370:if:0 [else]; src/utils.ts#372:binary-expr:0 [!encryptedData, encryptedData === '']; src/utils.ts#372:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"abc\"",
+     "from": {
+      "arm": "src/utils.ts#370:if:0",
+      "evidence": "src/utils.ts:370",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#370:if:0 [else]; src/utils.ts#372:binary-expr:0 [!encryptedData, encryptedData === '']; src/utils.ts#372:if:0 [else] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY": {
+     "module": "./errors",
+     "imported": "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#370:if:0",
+      "evidence": "src/utils.ts:370",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "crypto": {
+     "module": "crypto",
+     "imported": "*",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#370:if:0",
+      "evidence": "src/utils.ts:370",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/utils.ts#370:if:0": [
+     "else"
+    ],
+    "src/utils.ts#372:binary-expr:0": [
+     "!encryptedData",
+     "encryptedData === ''"
+    ],
+    "src/utils.ts#372:if:0": [
+     "else"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  },
+  {
+   "id": "sweep-lit-src-utils-ts-366-entry-0-9",
+   "functionId": "src/utils.ts:366:decrypt",
+   "via": null,
+   "lane": "unit",
+   "covers": [
+    "src/utils.ts#372:if:0"
+   ],
+   "args": [
+    {
+     "build": "undefined",
+     "from": {
+      "arm": "src/utils.ts#372:if:0",
+      "evidence": "src/utils.ts:372",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#372:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    },
+    {
+     "value": "\"\"",
+     "from": {
+      "arm": "src/utils.ts#372:if:0",
+      "evidence": "src/utils.ts:372",
+      "reading": "SWEEP, MEASURED. This value was derived from the parameter's NAME and TYPE, and its recording moved src/utils.ts#372:if:0 [then] after setup. The claim is that measurement, nothing more."
+     }
+    }
+   ],
+   "invoke": null,
+   "setup": [],
+   "boundaries": {
+    "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY": {
+     "module": "./errors",
+     "imported": "ENV_NOT_FOUND_KEY_DATA_ENCRYPTION_KEY",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#372:if:0",
+      "evidence": "src/utils.ts:372",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    },
+    "crypto": {
+     "module": "crypto",
+     "imported": "*",
+     "behaviour": "not substituted: the sweep's recording of this row ran the real one, and that recording is what the claim is",
+     "mock": {
+      "kind": "passthrough"
+     },
+     "from": {
+      "arm": "src/utils.ts#372:if:0",
+      "evidence": "src/utils.ts:372",
+      "reading": "SWEEP, MEASURED. The recording ran this boundary for real; passthrough says so."
+     }
+    }
+   },
+   "reaches": {
+    "src/utils.ts#372:if:0": [
+     "then"
+    ]
+   },
+   "rationale": "Banked by sweep.mjs from armsMoved: every side in `reaches` was measured moving on this row's own recording."
+  }
+ ]
+}

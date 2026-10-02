@@ -1,0 +1,21 @@
+{
+  "stage": "6-loop",
+  "mode": "mocked",
+  "iterations": [
+    {
+      "n": 1,
+      "at": "2026-10-02T07:48:14.853Z",
+      "gitSha": "63273f8e599e73f0fb38c0739314e8d46b6bc83d",
+      "specs": "characterization",
+      "specsMeasured": 6,
+      "sides": 2707,
+      "hitByCharacterization": 56,
+      "hitByEither": 56,
+      "stillUncovered": 2651,
+      "correctedHitByEither": 52,
+      "correctedSides": 2692,
+      "newSides": null,
+      "claimsFalse": 0
+    }
+  ]
+}

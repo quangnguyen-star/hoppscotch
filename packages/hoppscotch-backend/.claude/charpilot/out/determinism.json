@@ -1,0 +1,41 @@
+{
+  "stage": "5-determinism",
+  "mode": "mocked",
+  "checkedAt": "2026-10-02T07:48:05.852Z",
+  "envProvenance": "process-env-only",
+  "rowTimeoutMs": 10000,
+  "rowTimeoutMsSource": "rows",
+  "secondObservation": "recorded (record.mjs exited 0)",
+  "secondObservationRows": 23,
+  "totals": {
+    "rowsInFirst": 23,
+    "rowsCompared": 23,
+    "rowsUnstable": 2,
+    "rowsNotCompared": 0
+  },
+  "notCompared": [],
+  "rows": [
+    {
+      "id": "sweep-lit-src-mock-server-constants-mock-server-coll-request-example-ts-5-entry-0-4",
+      "file": "sweep-lit.json",
+      "unstablePaths": [
+        "returned.0.data._ref_id",
+        "returned.0.requests.0._ref_id",
+        "returned.0.requests.1._ref_id",
+        "returned.0.requests.2._ref_id",
+        "returned.0.requests.3._ref_id",
+        "returned.0.requests.4._ref_id",
+        "returned.0.requests.5._ref_id"
+      ],
+      "rawDifferingLeaves": 7
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-311-entry-0-0",
+      "file": "sweep-lit.json",
+      "unstablePaths": [
+        "returned.$date"
+      ],
+      "rawDifferingLeaves": 1
+    }
+  ]
+}

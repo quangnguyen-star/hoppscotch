@@ -1,0 +1,39 @@
+{
+  "stage": 5,
+  "emittedAt": "2026-10-02T07:48:06.948Z",
+  "argv": [
+    "--emit-tests",
+    "characterization"
+  ],
+  "policy": "real-except-cache",
+  "output": ".claude/charpilot/out/behaviour.json",
+  "outputRecordedAt": "2026-10-02T07:47:50.158Z",
+  "rowTimeoutMs": 10000,
+  "rowTimeoutMsSource": "rows",
+  "rows": {
+    "wanted": 23,
+    "asserted": 23,
+    "unverified": 0
+  },
+  "tests": 23,
+  "files": 6,
+  "emittedFiles": [
+    "characterization/auth-helper.char.ts",
+    "characterization/auth-redirect-uri.validator.char.ts",
+    "characterization/auth-stateless-state-store.char.ts",
+    "characterization/mailer-helper.char.ts",
+    "characterization/mock-server-constants-mock-server-coll-request-example.char.ts",
+    "characterization/utils.char.ts"
+  ],
+  "emittedFileHashes": {
+    "characterization/auth-helper.char.ts": "050e3ef43730406aa1f159411cf6fb8b65f8d21445c0aa528d7c3d7e75bb92d7",
+    "characterization/auth-redirect-uri.validator.char.ts": "012164475797ea66165b8519d0d84510c2c7bd72ffb7915f1d27df2bbeb057b2",
+    "characterization/auth-stateless-state-store.char.ts": "17cbe7d2a12046170b3fecb79d40e90079d8652db648c292f6383c4e8664b652",
+    "characterization/mailer-helper.char.ts": "945d0a9d8d40f3a59d7ce226af10467a3380cb62c3c22ee267b66de1224b0829",
+    "characterization/mock-server-constants-mock-server-coll-request-example.char.ts": "c032c2b87a2dd61d56776081cf258ce27abef471bbf6340197edfd673778479f",
+    "characterization/utils.char.ts": "e1718de0109fb6e329c90fd8cd7866535b783707bce6ea3fd56034fe43037386"
+  },
+  "unresolvableSpecifiers": [],
+  "leftAlone": [],
+  "reproduce": "node .claude/charpilot/record.mjs --policy real-except-cache --emit-tests characterization"
+}

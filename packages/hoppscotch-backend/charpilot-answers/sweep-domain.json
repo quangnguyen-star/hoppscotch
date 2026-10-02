@@ -1,0 +1,6099 @@
+{
+ "domain": [
+  {
+   "name": "user",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "teamID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "collectionID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "id",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "tx",
+   "type": "Omit<import(\"../generated/prisma/internal/class\").PrismaClient<never, Prisma.GlobalOmitConfig, import(\"@prisma/client/runtime/client\").DefaultArgs>, \"$connect\" | \"$disconnect\" | \"$on\" | \"$use\" | \"$extends\">",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "context",
+   "type": "ExecutionContext",
+   "values": [
+    null,
+    {},
+    {
+     "getHandler": null,
+     "switchToHttp": null
+    },
+    {
+     "req": {
+      "user": {
+       "uid": "u1"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "userUid",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "user",
+   "type": "User",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "uid",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "userID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "take",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "title",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "infraConfigs",
+   "type": "{ name: InfraConfigEnum; value: string; }[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "input",
+   "type": "CreateMockServerInput",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "parentID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "pubsub",
+   "type": "PubSubService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "configService",
+   "type": "ConfigService<Record<string | symbol, unknown>, false>",
+   "values": [
+    null,
+    {
+     "get": null
+    }
+   ]
+  },
+  {
+   "name": "requestID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "method",
+   "type": "string",
+   "values": [
+    "GET",
+    "POST",
+    "get",
+    ""
+   ]
+  },
+  {
+   "name": "request",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "name",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "prisma",
+   "type": "PrismaService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "res",
+   "type": "Response<any, Record<string, any>>",
+   "values": [
+    {},
+    {
+     "cookie": null,
+     "redirect": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "name": "tx",
+   "type": "Prisma.TransactionClient",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "userUID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "path",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "req",
+   "type": "Request<import(\".pnpm/@types+express-serve-static-core@5.1.1/node_modules/@types/express-serve-static-core\").ParamsDictionary, any, any, import(\".pnpm/@types+qs@6.15.1/node_modules/@types/qs\").ParsedQs, Record<string, any>>",
+   "values": [
+    {
+     "headers": {},
+     "cookies": {},
+     "query": {},
+     "params": {},
+     "body": {},
+     "user": {
+      "uid": "u1"
+     }
+    },
+    {
+     "headers": {
+      "authorization": "Bearer x"
+     },
+     "cookies": {}
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "requestHeaders",
+   "type": "Record<string, string>",
+   "values": [
+    {},
+    {
+     "content-type": "application/json"
+    },
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "mockServer",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; creatorUid: string | null; subdomain: string; collectionID: string; workspaceType: import(\"src/generated/prisma/client\").WorkspaceType; workspaceID: string; delayInMs: number; isPublic: boolean; isActive: boolean; hitCount: number; lastHitAt: Date | null; deletedAt: Date | null; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "cursor",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "accessToken",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "type",
+   "type": "ReqType",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "destCollID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "srcCollID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "newTitle",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "req",
+   "type": "any",
+   "values": [
+    {
+     "headers": {},
+     "cookies": {},
+     "query": {},
+     "params": {},
+     "body": {},
+     "user": {
+      "uid": "u1"
+     }
+    },
+    {
+     "headers": {
+      "authorization": "Bearer x"
+     },
+     "cookies": {}
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "refreshToken",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "token",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "requests",
+   "type": "{ id: string; mockExamples: any; }[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "teamService",
+   "type": "TeamService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "nextRequestID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "key",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "properties",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "userCollectionID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "variables",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdatePublishedDocsArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "jsonString",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "reqType",
+   "type": "DBReqType",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "cb",
+   "type": "Function",
+   "values": [
+    "() => undefined",
+    "(...a) => undefined"
+   ]
+  },
+  {
+   "name": "inviteeEmail",
+   "type": "string",
+   "values": [
+    "a@b.co",
+    "not-an-email",
+    "",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "queryParams",
+   "type": "Record<string, string>",
+   "values": [
+    {},
+    {
+     "content-type": "application/json"
+    },
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "requestBody",
+   "type": "unknown",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "example",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "nextCollectionID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "sortBy",
+   "type": "SortOptions",
+   "values": [
+    "TITLE",
+    "bogus",
+    null
+   ]
+  },
+  {
+   "name": "collectionData",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "requestPath",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "inviteID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "userUIDs",
+   "type": "string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreatePublishedDocsArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "searchQuery",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "data",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "userService",
+   "type": "UserService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "value",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "slug",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "args",
+   "type": "PaginationArgs",
+   "values": [
+    {
+     "take": 10,
+     "cursor": "c1"
+    },
+    {
+     "take": 0
+    },
+    {
+     "skip": 1,
+     "take": 5
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "mockServerId",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "request",
+   "type": "Request<import(\".pnpm/@types+express-serve-static-core@5.1.1/node_modules/@types/express-serve-static-core\").ParamsDictionary, any, any, import(\".pnpm/@types+qs@6.15.1/node_modules/@types/qs\").ParsedQs, Record<string, any>>",
+   "values": [
+    {
+     "headers": {},
+     "cookies": {},
+     "query": {},
+     "params": {},
+     "body": {},
+     "user": {
+      "uid": "u1"
+     }
+    },
+    {
+     "headers": {
+      "authorization": "Bearer x"
+     },
+     "cookies": {}
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "retryCount",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "args",
+   "type": "OffsetPaginationArgs",
+   "values": [
+    {
+     "take": 10,
+     "cursor": "c1"
+    },
+    {
+     "take": 0
+    },
+    {
+     "skip": 1,
+     "take": 5
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "delayInMs",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "profile",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "skip",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamCollectionService",
+   "type": "TeamCollectionService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "collection",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; type: DBReqType; orderIndex: number; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "done",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "next",
+   "type": "CallHandler<any>",
+   "values": [
+    {
+     "handle": null
+    },
+    null
+   ]
+  },
+  {
+   "name": "profile",
+   "type": "Profile",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "destCollectionID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "collection",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; orderIndex: number; teamID: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "email",
+   "type": "string",
+   "values": [
+    "a@b.co",
+    "not-an-email",
+    "",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "requestQueryParams",
+   "type": "Record<string, string>",
+   "values": [
+    {},
+    {
+     "content-type": "application/json"
+    },
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "env",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "parentCollectionID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "version",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "dto",
+   "type": "SaveOnboardingConfigRequest",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "headers",
+   "type": "IncomingHttpHeaders",
+   "values": [
+    {},
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "reqType",
+   "type": "ReqType",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "ctxOrState",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "dataCondition",
+   "type": "Prisma.IntFieldUpdateOperationsInput",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "metaOrCb",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "orderIndexCondition",
+   "type": "Prisma.IntFilter<never>",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "stateOrMeta",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "usersService",
+   "type": "UserService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "configMap",
+   "type": "Record<string, string>",
+   "values": [
+    {},
+    {
+     "content-type": "application/json"
+    },
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "service",
+   "type": "AuthProvider",
+   "values": [
+    "GITHUB",
+    "EMAIL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "url",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "checkDisallowedKeys",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "examples",
+   "type": "GqlExample[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "isCollectionDuplication",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "operation",
+   "type": "{ name: string | null; type: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "sortOption",
+   "type": "SortOptions",
+   "values": [
+    "TITLE",
+    "bogus",
+    null
+   ]
+  },
+  {
+   "name": "status",
+   "type": "ServiceStatus",
+   "values": [
+    "ENABLE",
+    "DISABLE",
+    "bogus"
+   ]
+  },
+  {
+   "name": "exampleData",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "requestId",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "userEmail",
+   "type": "string",
+   "values": [
+    "a@b.co",
+    "not-an-email",
+    "",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "role",
+   "type": "TeamAccessRole",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "magicLinkIDTokens",
+   "type": "VerifyMagicDto",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "origin",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "workspaceID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "workspaceType",
+   "type": "WorkspaceType",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "exampleId",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "exampleName",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "mailerService",
+   "type": "MailerService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "requestingUser",
+   "type": "User",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "admin",
+   "type": "Admin",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "body",
+   "type": "unknown",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "creator",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "infraConfigs",
+   "type": "InfraConfigArgs[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "inviteeRole",
+   "type": "TeamAccessRole",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "shortcodeID",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamRequestService",
+   "type": "TeamRequestService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "adminUser",
+   "type": "Admin",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "apiKey",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "currentSession",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "mockServer",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "newRole",
+   "type": "TeamAccessRole",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "nonce",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "requiredRoles",
+   "type": "TeamAccessRole[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "authService",
+   "type": "AuthService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "cursorID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "host",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "newName",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "restartEnabled",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "userCollectionService",
+   "type": "UserCollectionService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "displayName",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "done",
+   "type": "import(\".pnpm/@types+passport-oauth2@1.8.0/node_modules/@types/passport-oauth2\").VerifyCallback",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "input",
+   "type": "UpdateMockServerInput",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "providedState",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "value",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "environmentID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "reqType",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "userInfo",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "expiryInDays",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "label",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "name",
+   "type": "InfraConfigEnum",
+   "values": [
+    "MAILER_SMTP_ENABLE",
+    "bogus",
+    ""
+   ]
+  },
+  {
+   "name": "paginationOption",
+   "type": "OffsetPaginationArgs",
+   "values": [
+    {
+     "take": 10,
+     "cursor": "c1"
+    },
+    {
+     "take": 0
+    },
+    {
+     "skip": 1,
+     "take": 5
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "providerInfo",
+   "type": "EnableAndDisableSSOArgs[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "callerFunction",
+   "type": "\"moveRequest\" | \"updateLookUpRequestOrder\"",
+   "values": [
+    null,
+    "",
+    {},
+    0,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "code",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "handler",
+   "type": "CallHandler<any>",
+   "values": [
+    {
+     "handle": null
+    },
+    null
+   ]
+  },
+  {
+   "name": "reflector",
+   "type": "Reflector",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "req",
+   "type": "TeamRequest",
+   "values": [
+    {
+     "headers": {},
+     "cookies": {},
+     "query": {},
+     "params": {},
+     "body": {},
+     "user": {
+      "uid": "u1"
+     }
+    },
+    {
+     "headers": {
+      "authorization": "Bearer x"
+     },
+     "cookies": {}
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "res",
+   "type": "any",
+   "values": [
+    {},
+    {
+     "cookie": null,
+     "redirect": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "name": "rootCollectionId",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "sessionType",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamEnvironmentsService",
+   "type": "TeamEnvironmentsService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "databaseUrl",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "isGlobal",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "authTokens",
+   "type": "AuthTokens",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "char",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "error",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "names",
+   "type": "InfraConfigEnum[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "redirect",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "redirectUrl",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "sslMode",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamInvitationService",
+   "type": "TeamInvitationService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "action",
+   "type": "MockServerAction",
+   "values": [
+    "ACTIVATE",
+    "DEACTIVATE",
+    "bogus"
+   ]
+  },
+  {
+   "name": "adminEmail",
+   "type": "string",
+   "values": [
+    "a@b.co",
+    "not-an-email",
+    "",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "adminUID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "dto",
+   "type": "CreateUserInvitationRequest",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "performedBy",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "team",
+   "type": "Team",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "to",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "userHistoryService",
+   "type": "UserHistoryService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "acceptedBy",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "createAccessTokenDto",
+   "type": "CreateAccessTokenDto",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "dbMockServer",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; creatorUid: string | null; subdomain: string; collectionID: string; workspaceType: import(\"src/generated/prisma/client\").WorkspaceType; workspaceID: string; delayInMs: number; isPublic: boolean; isActive: boolean; hitCount: number; lastHitAt: Date | null; deletedAt: Date | null; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "destCollection",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; orderIndex: number; teamID: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "destCollection",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; type: DBReqType; orderIndex: number; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "encryptedData",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "infraConfigService",
+   "type": "InfraConfigService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "searchString",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "shortcodeService",
+   "type": "ShortcodeService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "cookieName",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "destCollID",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "folder",
+   "type": "CollectionFolder",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "maxAgeMs",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "nextRequest",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "orderIndex",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "publishedDocs",
+   "type": "PublishedDocs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "request",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "secret",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "secureCookies",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "srcCollID",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "updatedProps",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "connectionParams",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "expiresOn",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "inviteeEmails",
+   "type": "string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "newParentID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "uri",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "websocket",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "adminService",
+   "type": "AdminService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "dbInfraConfig",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "fullPath",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "hashedRefreshToken",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "logId",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "params",
+   "type": "{ mockServerID: string; requestMethod: string; requestPath: string; requestHeaders: Record<string, string>; requestBody?: any; requestQuery?: Record<string, string>; responseStatus: number; responseHeaders: Record<string, string>; responseTime: number; ipAddress?: string; userAgent?: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "reqData",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "resMetadata",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "shortcode",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "text",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "doc",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; metadata: JsonValue | null; creatorUid: string; collectionID: string; workspaceType: import(\"src/generated/prisma/client\").WorkspaceType; workspaceID: string; slug: string; title: string; version: string; autoSync: boolean; documentTree: JsonValue | null; environmentID: string | null; environmentName: string | null; environmentVariables: JsonValue | null; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "examplePath",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "input",
+   "type": "{ workspaceType: WorkspaceType; workspaceID: string; collectionID: string; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "pubSub",
+   "type": "PubSubService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "{ provider, status }",
+   "type": "EnableAndDisableSSOArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "body",
+   "type": "UpdateUserAdminStatusRequest",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "collection",
+   "type": "UserCollection",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "data",
+   "type": "unknown",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "provider",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "reqID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamId",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "accessTokenService",
+   "type": "AccessTokenService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "args",
+   "type": "MockServerMutationArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateRootUserCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateChildUserCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "GetUserRequestArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateUserRequestArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateUserRequestArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "example",
+   "type": "GqlExample",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "mockServer",
+   "type": "MockServer",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "mockServerID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "skip",
+   "type": "string",
+   "values": [
+    "10",
+    "0",
+    "-1",
+    "abc"
+   ]
+  },
+  {
+   "name": "take",
+   "type": "string",
+   "values": [
+    "10",
+    "0",
+    "-1",
+    "abc"
+   ]
+  },
+  {
+   "name": "userRequestService",
+   "type": "UserRequestService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "collection",
+   "type": "TeamCollection",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "configName",
+   "type": "InfraConfigEnum",
+   "values": [
+    "MAILER_SMTP_ENABLE",
+    "bogus",
+    ""
+   ]
+  },
+  {
+   "name": "infraConfigDefaultObjs",
+   "type": "DefaultInfraConfig[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "input",
+   "type": "{ workspaceType: WorkspaceType; workspaceID: string; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "mailDesc",
+   "type": "AdminUserInvitationMailDescription",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "publishedDocs",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; metadata: JsonValue | null; creatorUid: string; collectionID: string; workspaceType: import(\"src/generated/prisma/client\").WorkspaceType; workspaceID: string; slug: string; title: string; version: string; autoSync: boolean; documentTree: JsonValue | null; environmentID: string | null; environmentName: string | null; environmentVariables: JsonValue | null; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "VITE_ALLOWED_AUTH_PROVIDERS",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateChildTeamCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "authData",
+   "type": "SignInMagicDto",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "body",
+   "type": "UpdateUserRequest",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "dbConfig",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "dbUser",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "includeInactive",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "index",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "length",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "mailDesc",
+   "type": "MailDescription | UserMagicLinkMailDescription",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "parentCollections",
+   "type": "ParentTreeQueryReturnType[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "payload",
+   "type": "AccessTokenPayload",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "payload",
+   "type": "RefreshTokenPayload",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "rawCookies",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "redirectUri",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "searchTerm",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "str",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "subdomain",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamInviteService",
+   "type": "TeamInvitationService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "accessTokenSSO",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "app",
+   "type": "NestExpressApplication<import(\"node:http\").Server<typeof import(\"node:http\").IncomingMessage, typeof import(\"node:http\").ServerResponse>>",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "collectionIDs",
+   "type": "string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "err",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "isProduction",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "jwtService",
+   "type": "JwtService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "log",
+   "type": "{ id: string; mockServerID: string; requestMethod: string; requestPath: string; requestHeaders: import(\"@prisma/client/runtime/client\").JsonValue; requestBody: import(\"@prisma/client/runtime/client\").JsonValue | null; requestQuery: import(\"@prisma/client/runtime/client\").JsonValue | null; responseStatus: number; responseHeaders: import(\"@prisma/client/runtime/client\").JsonValue; responseBody: import(\"@prisma/client/runtime/client\").JsonValue | null; responseTime: number; ipAddress: string | null; userAgent: string | null; executedAt: Date; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "mockServerService",
+   "type": "MockServerService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "refreshTokenSSO",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "teamCollection",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; orderIndex: number; teamID: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "teamInvitation",
+   "type": "TeamInvitation",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "tx",
+   "type": "Omit<import(\"../generated/prisma/internal/class\").PrismaClient<never, import(\"../generated/prisma/internal/prismaNamespace\").GlobalOmitConfig, import(\"@prisma/client/runtime/client\").DefaultArgs>, \"$connect\" | \"$disconnect\" | \"$on\" | \"$use\" | \"$extends\">",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "versions",
+   "type": "PublishedDocsVersion[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "{ request, document }",
+   "type": "import(\"@apollo/server\").GraphQLRequestContextDidResolveOperation<BaseContext>",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "accessTokenID",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "adminUser",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "args",
+   "type": "MoveUserCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateUserCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "ComplexityEstimatorArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "childCollection",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; type: DBReqType; orderIndex: number; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "collectionData",
+   "type": "import(\"@prisma/client/runtime/client\").JsonValue",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "creatorUid",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "data",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "dto",
+   "type": "DeleteUserInvitationRequest",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "ex",
+   "type": "GqlExample",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "header",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "i",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "infraTokenService",
+   "type": "InfraTokenService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "magicLinkTokens",
+   "type": "VerifyMagicDto",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "mockServerAnalyticsService",
+   "type": "MockServerAnalyticsService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "nextRequest",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; collectionID: string; title: string; type: import(\"src/generated/prisma/client\").ReqType; orderIndex: number; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "passwordlessTokens",
+   "type": "{ userUid: string; token: string; expiresOn: Date; deviceIdentifier: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "refreshTokenHash",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "req",
+   "type": "Record<string, any>",
+   "values": [
+    {
+     "headers": {},
+     "cookies": {},
+     "query": {},
+     "params": {},
+     "body": {},
+     "user": {
+      "uid": "u1"
+     }
+    },
+    {
+     "headers": {
+      "authorization": "Bearer x"
+     },
+     "cookies": {}
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "request",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; collectionID: string; title: string; type: import(\"src/generated/prisma/client\").ReqType; orderIndex: number; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "res",
+   "type": "E.Either<string, boolean>",
+   "values": [
+    {},
+    {
+     "cookie": null,
+     "redirect": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "name": "sortService",
+   "type": "SortService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "t",
+   "type": "{ members: { userUid: string; role: import(\"src/generated/prisma/client\").TeamAccessRole; }[]; } & { name: string; id: string; }",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "token",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "tr",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; collectionID: string; title: string; orderIndex: number; teamID: string; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "val",
+   "type": "T",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "_user",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "analyticsCollectionStatus",
+   "type": "ServiceStatus",
+   "values": [
+    "ENABLE",
+    "DISABLE",
+    "bogus"
+   ]
+  },
+  {
+   "name": "args",
+   "type": "ChangeUserRoleInTeamArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "AddUserToTeamArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateRootTeamCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "RenameTeamCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "MoveTeamCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateTeamCollectionOrderArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateTeamCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateTeamEnvironmentArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateTeamEnvironmentArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "CreateTeamInvitationArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateLookUpRequestOrderArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "MoveTeamRequestArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "RenameUserCollectionsArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "ImportUserCollectionsFromJSONArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "UpdateUserCollectionsArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "MoveUserRequestArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "auth",
+   "type": "{}",
+   "values": [
+    {},
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "code",
+   "type": "{ user: { uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }; } & { createdOn: Date; id: string; updatedOn: Date; creatorUid: string | null; request: import(\"@prisma/client/runtime/client\").JsonValue; embedProperties: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "collectionType",
+   "type": "ReqType",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "config",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "config",
+   "type": "InfraConfig",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "data",
+   "type": "VerifyMagicDto",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "data",
+   "type": "CreateTeamRequestInput",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "data",
+   "type": "UpdateTeamRequestInput",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "docs",
+   "type": "T[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "existingCollectionIDs",
+   "type": "Set<string>",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "handler",
+   "type": "UserDataHandler",
+   "values": [
+    null,
+    "",
+    {},
+    0,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "infraConfig",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "limit",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "logID",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "mailDesc",
+   "type": "MailDescription | UserMagicLinkMailDescription | AdminUserInvitationMailDescription",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "member",
+   "type": "TeamMember",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "nextRequest",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; collectionID: string; title: string; orderIndex: number; teamID: string; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "offset",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "refresh_token",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "request",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; collectionID: string; title: string; orderIndex: number; teamID: string; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "row",
+   "type": "{ name: string; value: string; isEncrypted: boolean; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "sessionData",
+   "type": "string",
+   "values": [
+    "{}",
+    "[]",
+    "",
+    "not json",
+    "{\"a\":1}"
+   ]
+  },
+  {
+   "name": "sessionType",
+   "type": "SessionType",
+   "values": [
+    "REST",
+    "bogus"
+   ]
+  },
+  {
+   "name": "SSOUserData",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "teamEnvironmentService",
+   "type": "TeamEnvironmentsService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "teamMember",
+   "type": "TeamMember",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "updatedDisplayName",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "acc",
+   "type": "GetOnboardingConfigResponse",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "collectionName",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "ctx",
+   "type": "ExecutionContext",
+   "values": [
+    null,
+    {},
+    {
+     "getHandler": null,
+     "switchToHttp": null
+    },
+    {
+     "req": {
+      "user": {
+       "uid": "u1"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "env",
+   "type": "Record<string, any>",
+   "values": [
+    {},
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "expiresInDays",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "f",
+   "type": "CollectionFolder",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "health",
+   "type": "HealthCheckService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "m",
+   "type": "{ userUid: string; role: import(\"src/generated/prisma/client\").TeamAccessRole; }",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "payload",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "prismaHealth",
+   "type": "PrismaHealthIndicator",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "query",
+   "type": "Prisma.TeamCollectionCreateInput",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "request",
+   "type": "{ id: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "response",
+   "type": "Response<any, Record<string, any>>",
+   "values": [
+    {},
+    {
+     "cookie": null,
+     "redirect": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "name": "result",
+   "type": "PromiseSettledResult<UserDeletionResult>",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "shortcodeInfo",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; creatorUid: string | null; request: import(\"@prisma/client/runtime/client\").JsonValue; embedProperties: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "userEnvironmentsService",
+   "type": "UserEnvironmentsService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "userSettingsService",
+   "type": "UserSettingsService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "wasmBase64",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "x",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; collectionID: string; title: string; orderIndex: number; teamID: string; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "x",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "x",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; collectionID: string; title: string; type: DBReqType; orderIndex: number; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "[key, value]",
+   "type": "[string, any]",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "acc",
+   "type": "Record<string, string>",
+   "values": [
+    {},
+    {
+     "content-type": "application/json"
+    },
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "FetchAllUsersV2Args",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "FetchAllTeamsV2Args",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "FetchPublishedDocsArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "collectionIds",
+   "type": "string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "curr",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "dbConfig",
+   "type": "Partial<{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }> & { id: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "doc",
+   "type": "T",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "errorData",
+   "type": "RESTError",
+   "values": [
+    null,
+    "",
+    {},
+    0,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "example",
+   "type": "Example",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "isOwner",
+   "type": "boolean",
+   "values": [
+    true,
+    false,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "member",
+   "type": "{ id: string; userUid: string; teamID: string; role: import(\"src/generated/prisma/client\").TeamAccessRole; }",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "nestMailerService",
+   "type": "NestMailerService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "p",
+   "type": "{ name: InfraConfigEnum; value: string; isEncrypted: boolean; }",
+   "values": [
+    "MAILER_SMTP_ENABLE",
+    "bogus",
+    ""
+   ]
+  },
+  {
+   "name": "paginationQuery",
+   "type": "OffsetPaginationArgs",
+   "values": [
+    {
+     "take": 10,
+     "cursor": "c1"
+    },
+    {
+     "take": 0
+    },
+    {
+     "skip": 1,
+     "take": 5
+    },
+    {},
+    null
+   ]
+  },
+  {
+   "name": "query",
+   "type": "GetUsersRequestQuery",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "s",
+   "type": "{ example: GqlExample; score: number; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "scored",
+   "type": "{ example: Example; score: number; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "searchResult",
+   "type": "SearchQueryReturnType",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "teamEnvironment",
+   "type": "{ name: string; id: string; teamID: string; variables: import(\"@prisma/client/runtime/client\").JsonValue; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "[name, value]",
+   "type": "[string, string]",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "a",
+   "type": "{ example: GqlExample; score: number; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "admin",
+   "type": "{ uid: string; displayName: string | null; email: string | null; photoURL: string | null; isAdmin: boolean; refreshToken: string | null; currentRESTSession: import(\"@prisma/client/runtime/client\").JsonValue | null; currentGQLSession: import(\"@prisma/client/runtime/client\").JsonValue | null; createdOn: Date; lastLoggedOn: Date | null; lastActiveOn: Date | null; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "appBaseUrl",
+   "type": "string",
+   "values": [
+    "http://localhost:3000",
+    "/a/b",
+    "",
+    "not a url",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "argName",
+   "type": "ArgName",
+   "values": [
+    null,
+    "",
+    {},
+    0,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "args",
+   "type": "FetchAllShortcodesArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "FetchTeamMockServersArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "GetRootTeamCollectionsArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "SearchTeamRequestArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "arr",
+   "type": "TE.TaskEither<A, B>[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "b",
+   "type": "{ example: GqlExample; score: number; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "code",
+   "type": "{ createdOn: Date; id: string; updatedOn: Date; creatorUid: string | null; request: import(\"@prisma/client/runtime/client\").JsonValue; embedProperties: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "col",
+   "type": "{ id: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "coll",
+   "type": "{ id: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "collection",
+   "type": "{ id: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "configName",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "ctx",
+   "type": "GqlExecutionContext",
+   "values": [
+    null,
+    {},
+    {
+     "getHandler": null,
+     "switchToHttp": null
+    },
+    {
+     "req": {
+      "user": {
+       "uid": "u1"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "dbInfraToken",
+   "type": "{ createdOn: Date; id: string; label: string; token: string; expiresOn: Date | null; updatedOn: Date; creatorUid: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "dbInvitation",
+   "type": "{ id: string; inviteeEmail: string; creatorUid: string; teamID: string; inviteeRole: import(\"src/generated/prisma/client\").TeamAccessRole; }",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "dbRequest",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; collectionID: string; title: string; type: import(\"src/generated/prisma/client\").ReqType; orderIndex: number; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "dbTeamInvitation",
+   "type": "{ id: string; inviteeEmail: string; creatorUid: string; teamID: string; inviteeRole: import(\"src/generated/prisma/client\").TeamAccessRole; }",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "entry",
+   "type": "{ id: string; userUid: string; teamID: string; role: import(\"src/generated/prisma/client\").TeamAccessRole; }",
+   "values": [
+    "OWNER",
+    "EDITOR",
+    "VIEWER",
+    "bogus"
+   ]
+  },
+  {
+   "name": "environment",
+   "type": "{ name: string | null; id: string; userUid: string; variables: import(\"@prisma/client/runtime/client\").JsonValue; isGlobal: boolean; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "errMessage",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "error",
+   "type": "Error",
+   "values": [
+    null,
+    "",
+    {},
+    0,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "input",
+   "type": "GetTeamRequestInCollectionArgs",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "item",
+   "type": "{ name: string; id: string; teamID: string; variables: import(\"@prisma/client/runtime/client\").JsonValue; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "key",
+   "type": "InfraConfigEnum",
+   "values": [
+    "MAILER_SMTP_ENABLE",
+    "bogus",
+    ""
+   ]
+  },
+  {
+   "name": "members",
+   "type": "TeamMember[]",
+   "values": [
+    [],
+    [
+     {
+      "id": "x"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "name": "ms",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; creatorUid: string | null; subdomain: string; collectionID: string; workspaceType: import(\"src/generated/prisma/client\").WorkspaceType; workspaceID: string; delayInMs: number; isPublic: boolean; isActive: boolean; hitCount: number; lastHitAt: Date | null; deletedAt: Date | null; }",
+   "values": [
+    "USER",
+    "TEAM",
+    "bogus"
+   ]
+  },
+  {
+   "name": "p",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "payload",
+   "type": "TopicDef[T]",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "publishedDocsService",
+   "type": "PublishedDocsService",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "query",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "r",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "reason",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "resolve",
+   "type": "(value: unknown) => void",
+   "values": [
+    "() => undefined",
+    "(...a) => undefined"
+   ]
+  },
+  {
+   "name": "roles",
+   "type": "TeamAccessRole[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "token",
+   "type": "{ createdOn: Date; id: string; userUid: string; label: string; token: string; expiresOn: Date | null; updatedOn: Date; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "topic",
+   "type": "string | string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "topic",
+   "type": "T",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "userSettings",
+   "type": "{ id: string; userUid: string; updatedOn: Date; properties: import(\"@prisma/client/runtime/client\").JsonValue; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "x",
+   "type": "TeamMember",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "{ id }",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; data: import(\"@prisma/client/runtime/client\").JsonValue | null; title: string; parentID: string | null; type: DBReqType; orderIndex: number; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "{ req, res, connection }",
+   "type": "{ req: any; res: any; connection: any; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "{ user }",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "a",
+   "type": "{ example: Example; score: number; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "args",
+   "type": "object",
+   "values": [
+    {},
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "b",
+   "type": "{ example: Example; score: number; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "c",
+   "type": "Partial<{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }> & { id: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "c",
+   "type": "{ name: InfraConfigEnum; value: string; }",
+   "values": [
+    "MAILER_SMTP_ENABLE",
+    "bogus",
+    ""
+   ]
+  },
+  {
+   "name": "childCollection",
+   "type": "E.Right<UserCollectionDuplicatedData>",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "config",
+   "type": "DefaultInfraConfig",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "cookie",
+   "type": "string",
+   "values": [
+    "tok",
+    "",
+    "a.b.c",
+    "bad token",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "cookies",
+   "type": "Record<string, any>",
+   "values": [
+    {},
+    {
+     "a": "b"
+    },
+    null
+   ]
+  },
+  {
+   "name": "e",
+   "type": "string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "error",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "errors",
+   "type": "string[]",
+   "values": [
+    [],
+    [
+     "a"
+    ],
+    [
+     "a",
+     "b"
+    ],
+    null
+   ]
+  },
+  {
+   "name": "errors",
+   "type": "string[] | \"user/not_found\"",
+   "values": [
+    null,
+    "",
+    {},
+    0,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "ex",
+   "type": "Example",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "gqlSchemaHost",
+   "type": "GraphQLSchemaHost",
+   "values": [
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "history",
+   "type": "{ id: string; userUid: string; request: import(\"@prisma/client/runtime/client\").JsonValue; reqType: import(\"../generated/prisma/enums\").ReqType; responseMetadata: import(\"@prisma/client/runtime/client\").JsonValue; isStarred: boolean; executedOn: Date; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "item",
+   "type": "ParentTreeQueryReturnType",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "key",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "message",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "valid-id",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "ms",
+   "type": "number",
+   "values": [
+    0,
+    1,
+    -1,
+    10,
+    null,
+    "__undefined__"
+   ]
+  },
+  {
+   "name": "o",
+   "type": "any",
+   "values": [
+    null,
+    "__undefined__",
+    "",
+    0,
+    {},
+    []
+   ]
+  },
+  {
+   "name": "p",
+   "type": "{ name: string; isEncrypted: boolean; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "p",
+   "type": "{ name: string; createdOn: Date; id: string; updatedOn: Date; value: string | null; isEncrypted: boolean; lastSyncedEnvFileValue: string | null; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "pat",
+   "type": "{ createdOn: Date; id: string; userUid: string; label: string; token: string; expiresOn: Date | null; updatedOn: Date; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "r",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; collectionID: string; title: string; type: import(\"src/generated/prisma/client\").ReqType; orderIndex: number; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "requestObj",
+   "type": "{ createdOn: Date; id: string; userUid: string; updatedOn: Date; collectionID: string; title: string; type: DBReqType; orderIndex: number; request: import(\"@prisma/client/runtime/client\").JsonValue; mockExamples: import(\"@prisma/client/runtime/client\").JsonValue | null; }",
+   "values": [
+    "REST",
+    "GQL",
+    "bogus"
+   ]
+  },
+  {
+   "name": "resolve",
+   "type": "(value: void | PromiseLike<void>) => void",
+   "values": [
+    "() => undefined",
+    "(...a) => undefined"
+   ]
+  },
+  {
+   "name": "token",
+   "type": "{ createdOn: Date; id: string; label: string; token: string; expiresOn: Date | null; updatedOn: Date; creatorUid: string; }",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "transform",
+   "type": "(val: T) => unknown",
+   "values": [
+    "() => undefined",
+    "(...a) => undefined"
+   ]
+  },
+  {
+   "name": "user",
+   "type": "{ email: string; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "user",
+   "type": "{ adminUid: string; adminEmail: string; inviteeEmail: string; invitedOn: Date; }",
+   "values": [
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": false
+    },
+    {
+     "uid": "u1",
+     "displayName": "A",
+     "email": "a@b.co",
+     "photoURL": null,
+     "isAdmin": true
+    },
+    {
+     "uid": "",
+     "displayName": null,
+     "email": null,
+     "photoURL": null
+    },
+    null,
+    {}
+   ]
+  },
+  {
+   "name": "x",
+   "type": "Team",
+   "values": [
+    {},
+    {
+     "id": "x"
+    },
+    {
+     "id": "x",
+     "title": "t",
+     "name": "n"
+    },
+    null
+   ]
+  },
+  {
+   "name": "x",
+   "type": "string",
+   "values": [
+    "abc",
+    "",
+    "a b",
+    "__undefined__"
+   ]
+  }
+ ]
+}

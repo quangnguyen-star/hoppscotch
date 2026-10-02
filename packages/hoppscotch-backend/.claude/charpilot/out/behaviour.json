@@ -1,0 +1,2859 @@
+{
+  "stage": "4-behaviour",
+  "mode": "mocked",
+  "recordedAt": "2026-10-02T07:47:50.158Z",
+  "harnessVersion": "07ffed9ac9d0",
+  "recordingKey": "ef9c13526ce3",
+  "recordingKeyParts": {
+    "targetNodeMajor": 22,
+    "observationVersion": 2,
+    "rowTimeoutMs": 10000,
+    "allowHosts": [],
+    "live": false,
+    "liveProviders": false,
+    "policy": "real-except-cache",
+    "envProvenance": "process-env-only",
+    "standIns": [
+      "DATA_ENCRYPTION_KEY",
+      "GENERATE_GQL_SCHEMA",
+      "VITE_BASE_URL"
+    ]
+  },
+  "selection": {
+    "argv": [],
+    "only": null,
+    "live": false,
+    "liveProviders": false,
+    "policy": "real-except-cache",
+    "rowTimeoutMs": 10000,
+    "proposalsSeen": 23,
+    "runnableSelected": 23
+  },
+  "envFile": "process env only",
+  "envProvenance": "process-env-only",
+  "standIns": [
+    "DATA_ENCRYPTION_KEY",
+    "GENERATE_GQL_SCHEMA",
+    "VITE_BASE_URL"
+  ],
+  "harnessEnv": {
+    "REDIS_ENABLED": "true",
+    "REDIS_PASSWORD": "",
+    "BUILD_ID": "charpilot"
+  },
+  "target": "hoppscotch-backend",
+  "dbGuard": {
+    "denied": [
+      "src/generated/prisma/client",
+      "@/prisma/client"
+    ],
+    "relativeUnreachable": [],
+    "ormModulesSeen": [
+      "@prisma/client/runtime/client",
+      "src/prisma/prisma.service",
+      "src/generated/prisma/client",
+      "src/prisma/prisma-error-codes",
+      "@prisma/adapter-pg"
+    ]
+  },
+  "totals": {
+    "proposals": 23,
+    "runnable": 23,
+    "recorded": 23,
+    "harnessFailures": 0,
+    "blockedEgress": 0,
+    "notSettled": 0,
+    "notSettledBeforeSubject": 0,
+    "rowTimeoutMs": 10000,
+    "egressAfterSettle": 0,
+    "pending": 0,
+    "unrunnable": 0,
+    "notRecorded": 0,
+    "claimsChecked": 56,
+    "claimsJudgeable": 56,
+    "claimsVerified": 56,
+    "claimsFalse": 0,
+    "claimsUnmeasurable": 0,
+    "supersededRows": 0
+  },
+  "rows": [
+    {
+      "id": "sweep-lit-src-auth-helper-ts-89-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:89:subscriptionContextCookieParser",
+      "covers": [
+        "src/auth/helper.ts#92:if:0",
+        "src/auth/helper.ts#93:binary-expr:0"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#92:if:0": [
+          "then"
+        ],
+        "src/auth/helper.ts#93:binary-expr:0": [
+          "!cookies[AuthTokenType.ACCESS_TOKEN]",
+          "!cookies[AuthTokenType.REFRESH_TOKEN]"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927254508,
+      "invoked": true,
+      "threw": {
+        "$error": "HttpException",
+        "message": "auth/cookies_not_found",
+        "response": "auth/cookies_not_found",
+        "status": 400,
+        "options": {
+          "cause": {
+            "$error": "Error",
+            "message": "auth/cookies_not_found"
+          }
+        },
+        "cause": {
+          "$error": "Error",
+          "message": "auth/cookies_not_found"
+        }
+      },
+      "durationMs": 1107,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/helper.ts": {
+          "5": [
+            0
+          ],
+          "6": [
+            0,
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/helper.ts#92:if:0",
+          "file": "src/auth/helper.ts",
+          "line": 92,
+          "sides": [
+            "then"
+          ]
+        },
+        {
+          "armId": "src/auth/helper.ts#93:binary-expr:0",
+          "file": "src/auth/helper.ts",
+          "line": 93,
+          "sides": [
+            "!cookies[AuthTokenType.ACCESS_TOKEN]",
+            "!cookies[AuthTokenType.REFRESH_TOKEN]"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/helper.ts#92:if:0",
+          "side": "then",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#93:binary-expr:0",
+          "side": "!cookies[AuthTokenType.ACCESS_TOKEN]",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#93:binary-expr:0",
+          "side": "!cookies[AuthTokenType.REFRESH_TOKEN]",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "4e774b05db66",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/helper.ts",
+          "src/errors.ts"
+        ],
+        "digest": "e6c4fd596212"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-113-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:113:authProviderCheck",
+      "covers": [
+        "src/auth/helper.ts#117:if:0",
+        "src/auth/helper.ts#121:binary-expr:0",
+        "src/auth/helper.ts#123:if:0"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#117:if:0": [
+          "else"
+        ],
+        "src/auth/helper.ts#121:binary-expr:0": [
+          "VITE_ALLOWED_AUTH_PROVIDERS?.split(',')"
+        ],
+        "src/auth/helper.ts#123:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255611,
+      "invoked": true,
+      "returned": false,
+      "durationMs": 34,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/helper.ts": {
+          "7": [
+            1
+          ],
+          "8": [
+            0
+          ],
+          "9": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/helper.ts#117:if:0",
+          "file": "src/auth/helper.ts",
+          "line": 117,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/auth/helper.ts#121:binary-expr:0",
+          "file": "src/auth/helper.ts",
+          "line": 121,
+          "sides": [
+            "VITE_ALLOWED_AUTH_PROVIDERS?.split(',')"
+          ]
+        },
+        {
+          "armId": "src/auth/helper.ts#123:if:0",
+          "file": "src/auth/helper.ts",
+          "line": 123,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/helper.ts#117:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#121:binary-expr:0",
+          "side": "VITE_ALLOWED_AUTH_PROVIDERS?.split(',')",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#123:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "a995b64b655a",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/helper.ts",
+          "src/errors.ts",
+          "src/utils.ts"
+        ],
+        "digest": "e6c4fd596212"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-113-entry-0-9",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:113:authProviderCheck",
+      "covers": [
+        "src/auth/helper.ts#117:if:0"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#117:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255646,
+      "invoked": true,
+      "threw": {
+        "$error": "Error",
+        "message": "auth/provider_not_specified"
+      },
+      "durationMs": 23,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/helper.ts": {
+          "7": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/helper.ts#117:if:0",
+          "file": "src/auth/helper.ts",
+          "line": 117,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/helper.ts#117:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "09e022c7fde3",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/helper.ts",
+          "src/errors.ts",
+          "src/utils.ts"
+        ],
+        "digest": "e6c4fd596212"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-133-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:133:extractCookieAsKeyValuesFromHeaders",
+      "covers": [
+        "src/auth/helper.ts#137:binary-expr:0",
+        "src/auth/helper.ts#139:if:0"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#137:binary-expr:0": [
+          "headers['cookie']",
+          "headers['Cookie']",
+          "headers['COOKIE']"
+        ],
+        "src/auth/helper.ts#139:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255671,
+      "invoked": true,
+      "threw": {
+        "$error": "HttpException",
+        "message": "auth/cookies_not_found",
+        "response": "auth/cookies_not_found",
+        "status": 400,
+        "options": {
+          "cause": {
+            "$error": "Error",
+            "message": "auth/cookies_not_found"
+          }
+        },
+        "cause": {
+          "$error": "Error",
+          "message": "auth/cookies_not_found"
+        }
+      },
+      "durationMs": 22,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/helper.ts": {
+          "10": [
+            0,
+            1,
+            2
+          ],
+          "11": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/helper.ts#137:binary-expr:0",
+          "file": "src/auth/helper.ts",
+          "line": 137,
+          "sides": [
+            "headers['cookie']",
+            "headers['Cookie']",
+            "headers['COOKIE']"
+          ]
+        },
+        {
+          "armId": "src/auth/helper.ts#139:if:0",
+          "file": "src/auth/helper.ts",
+          "line": 139,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/helper.ts#137:binary-expr:0",
+          "side": "headers['cookie']",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#137:binary-expr:0",
+          "side": "headers['Cookie']",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#137:binary-expr:0",
+          "side": "headers['COOKIE']",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#139:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "9e2b3fb8f76c",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/helper.ts",
+          "src/errors.ts"
+        ],
+        "digest": "e6c4fd596212"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-215-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:215:extractAccessTokenFromAuthRecords",
+      "covers": [
+        "src/auth/helper.ts#218:binary-expr:0",
+        "src/auth/helper.ts#219:if:0"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#218:binary-expr:0": [
+          "headers['authorization']",
+          "headers['Authorization']"
+        ],
+        "src/auth/helper.ts#219:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255695,
+      "invoked": true,
+      "threw": {
+        "$error": "HttpException",
+        "message": "auth/auth_header_not_found",
+        "response": "auth/auth_header_not_found",
+        "status": 400,
+        "options": {
+          "cause": {
+            "$error": "Error",
+            "message": "auth/auth_header_not_found"
+          }
+        },
+        "cause": {
+          "$error": "Error",
+          "message": "auth/auth_header_not_found"
+        }
+      },
+      "durationMs": 28,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/helper.ts": {
+          "16": [
+            0,
+            1
+          ],
+          "17": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/helper.ts#218:binary-expr:0",
+          "file": "src/auth/helper.ts",
+          "line": 218,
+          "sides": [
+            "headers['authorization']",
+            "headers['Authorization']"
+          ]
+        },
+        {
+          "armId": "src/auth/helper.ts#219:if:0",
+          "file": "src/auth/helper.ts",
+          "line": 219,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/helper.ts#218:binary-expr:0",
+          "side": "headers['authorization']",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#218:binary-expr:0",
+          "side": "headers['Authorization']",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/helper.ts#219:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "1ebc4d6192fc",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/helper.ts",
+          "src/errors.ts"
+        ],
+        "digest": "e6c4fd596212"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/redirect-uri.validator.ts:4:isValidLocalhostRedirectUri",
+      "covers": [
+        "src/auth/redirect-uri.validator.ts#7:if:0"
+      ],
+      "reaches": {
+        "src/auth/redirect-uri.validator.ts#7:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255725,
+      "invoked": true,
+      "returned": false,
+      "durationMs": 37,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/redirect-uri.validator.ts": {
+          "0": [
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/redirect-uri.validator.ts#7:if:0",
+          "file": "src/auth/redirect-uri.validator.ts",
+          "line": 7,
+          "sides": [
+            "else"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/redirect-uri.validator.ts#7:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "f190a002e9f0",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/redirect-uri.validator.ts"
+        ],
+        "digest": "0d11b01eff13"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-4",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/redirect-uri.validator.ts:4:isValidLocalhostRedirectUri",
+      "covers": [
+        "src/auth/redirect-uri.validator.ts#7:if:0"
+      ],
+      "reaches": {
+        "src/auth/redirect-uri.validator.ts#7:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255764,
+      "invoked": true,
+      "returned": false,
+      "durationMs": 23,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/redirect-uri.validator.ts": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/redirect-uri.validator.ts#7:if:0",
+          "file": "src/auth/redirect-uri.validator.ts",
+          "line": 7,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/redirect-uri.validator.ts#7:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "071465cdf0c4",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/redirect-uri.validator.ts"
+        ],
+        "digest": "0d11b01eff13"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-auth-stateless-state-store-ts-51-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/stateless-state-store.ts:51:StatelessStateStore.constructor",
+      "covers": [
+        "src/auth/stateless-state-store.ts#57:if:0",
+        "src/auth/stateless-state-store.ts#67:binary-expr:0",
+        "src/auth/stateless-state-store.ts#69:binary-expr:0",
+        "src/auth/stateless-state-store.ts#70:binary-expr:0"
+      ],
+      "reaches": {
+        "src/auth/stateless-state-store.ts#57:if:0": [
+          "else"
+        ],
+        "src/auth/stateless-state-store.ts#67:binary-expr:0": [
+          "secret"
+        ],
+        "src/auth/stateless-state-store.ts#69:binary-expr:0": [
+          "cookieName"
+        ],
+        "src/auth/stateless-state-store.ts#70:binary-expr:0": [
+          "secureCookies"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255788,
+      "invoked": true,
+      "returned": {
+        "cookieName": "\"tok\"",
+        "maxAgeMs": "0",
+        "secret": {
+          "$redacted": "string",
+          "length": 5
+        },
+        "secureCookies": "true"
+      },
+      "durationMs": 94,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/auth/stateless-state-store.ts": {
+          "1": [
+            1
+          ],
+          "3": [
+            0
+          ],
+          "4": [
+            0
+          ],
+          "5": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/auth/stateless-state-store.ts#57:if:0",
+          "file": "src/auth/stateless-state-store.ts",
+          "line": 57,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/auth/stateless-state-store.ts#67:binary-expr:0",
+          "file": "src/auth/stateless-state-store.ts",
+          "line": 67,
+          "sides": [
+            "secret"
+          ]
+        },
+        {
+          "armId": "src/auth/stateless-state-store.ts#69:binary-expr:0",
+          "file": "src/auth/stateless-state-store.ts",
+          "line": 69,
+          "sides": [
+            "cookieName"
+          ]
+        },
+        {
+          "armId": "src/auth/stateless-state-store.ts#70:binary-expr:0",
+          "file": "src/auth/stateless-state-store.ts",
+          "line": 70,
+          "sides": [
+            "secureCookies"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/auth/stateless-state-store.ts#57:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/stateless-state-store.ts#67:binary-expr:0",
+          "side": "secret",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/stateless-state-store.ts#69:binary-expr:0",
+          "side": "cookieName",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/auth/stateless-state-store.ts#70:binary-expr:0",
+          "side": "secureCookies",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "3ae92007067f",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/auth/stateless-state-store.ts"
+        ],
+        "digest": "31979a8c46ac"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-mailer-helper-ts-17-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/mailer/helper.ts:17:getMailerAddressFrom",
+      "covers": [
+        "src/mailer/helper.ts#18:binary-expr:0"
+      ],
+      "reaches": {
+        "src/mailer/helper.ts#18:binary-expr:0": [
+          "env.INFRA.MAILER_ADDRESS_FROM"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255885,
+      "invoked": true,
+      "threw": {
+        "$error": "TypeError",
+        "message": "Cannot read properties of undefined (reading 'MAILER_ADDRESS_FROM')"
+      },
+      "durationMs": 68,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/mailer/helper.ts": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/mailer/helper.ts#18:binary-expr:0",
+          "file": "src/mailer/helper.ts",
+          "line": 18,
+          "sides": [
+            "env.INFRA.MAILER_ADDRESS_FROM"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/mailer/helper.ts#18:binary-expr:0",
+          "side": "env.INFRA.MAILER_ADDRESS_FROM",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "be59debb4d2b",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/errors.ts",
+          "src/mailer/helper.ts",
+          "src/utils.ts"
+        ],
+        "digest": "59fc041f1348"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-mock-server-constants-mock-server-coll-request-example-ts-5-entry-0-4",
+      "file": "sweep-lit.json",
+      "functionId": "src/mock-server/constants/mock-server-coll-request-example.ts:5:mockServerCollRequestExample",
+      "covers": [
+        "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0"
+      ],
+      "reaches": {
+        "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0": [
+          "collectionName falls back to its default"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927255954,
+      "invoked": true,
+      "returned": [
+        {
+          "data": {
+            "_ref_id": "coll_muqnuis9_8e67d5db-9a58-475f-810d-9c59428ab2d4",
+            "auth": {
+              "$redacted": "object"
+            },
+            "headers": []
+          },
+          "folders": [],
+          "name": "Hoppscotch API Mock example",
+          "requests": [
+            {
+              "_ref_id": "req_muqnuis3_7c04a71b-e9e0-46f0-a86a-996f43e8d4c1",
+              "auth": {
+                "$redacted": "object"
+              },
+              "body": {
+                "body": "{\n\t\"id\": 1,\n\t\"category\": {\n\t\t\"id\": 1,\n\t\t\"name\": \"string\"\n\t},\n\t\"name\": \"doggie\",\n\t\"photoUrls\": [\n\t\t\"string\"\n\t],\n\t\"tags\": [],\n\t\"status\": \"available\"\n}",
+                "contentType": "application/json"
+              },
+              "endpoint": "<<mockUrl>>/v2/pet",
+              "headers": [],
+              "method": "POST",
+              "name": "addPet",
+              "params": [],
+              "preRequestScript": "",
+              "requestVariables": [],
+              "responses": {
+                "Invalid input": {
+                  "body": "",
+                  "code": 405,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Invalid input",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "<<mockUrl>>/v2/pet",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "POST",
+                    "name": "addPet",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Method Not Allowed"
+                }
+              },
+              "testScript": "",
+              "v": "16"
+            },
+            {
+              "_ref_id": "req_muqnuis4_450367ed-a4ba-4c77-be28-15bf9670d294",
+              "auth": {
+                "$redacted": "object"
+              },
+              "body": {
+                "body": "{\n\t\"id\": 1,\n\t\"category\": {\n\t\t\"id\": 1,\n\t\t\"name\": \"string\"\n\t},\n\t\"name\": \"doggie\",\n\t\"photoUrls\": [\n\t\t\"string\"\n\t],\n\t\"tags\": [],\n\t\"status\": \"available\"\n}",
+                "contentType": "application/json"
+              },
+              "endpoint": "<<mockUrl>>/v2/pet",
+              "headers": [],
+              "method": "PUT",
+              "name": "updatePet",
+              "params": [],
+              "preRequestScript": "",
+              "requestVariables": [],
+              "responses": {
+                "Invalid ID supplied": {
+                  "body": "",
+                  "code": 400,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Invalid ID supplied",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "<<mockUrl>>/v2/pet",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "PUT",
+                    "name": "updatePet",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Bad Request"
+                },
+                "Pet not found": {
+                  "body": "",
+                  "code": 404,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Pet not found",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "<<mockUrl>>/v2/pet",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "PUT",
+                    "name": "updatePet",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Not Found"
+                },
+                "Validation exception": {
+                  "body": "",
+                  "code": 405,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Validation exception",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "<<mockUrl>>/v2/pet",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "PUT",
+                    "name": "updatePet",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Method Not Allowed"
+                }
+              },
+              "testScript": "",
+              "v": "16"
+            },
+            {
+              "_ref_id": "req_muqnuis5_185d6193-5a76-4d38-a522-9f53cdffb7c7",
+              "auth": {
+                "$redacted": "object"
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "endpoint": "<<mockUrl>>/v2/pet/findByStatus",
+              "headers": [],
+              "method": "GET",
+              "name": "findPetsByStatus",
+              "params": [
+                {
+                  "active": true,
+                  "description": "Status values that need to be considered for filter",
+                  "key": "status",
+                  "value": ""
+                }
+              ],
+              "preRequestScript": "",
+              "requestVariables": [],
+              "responses": {
+                "Invalid status value": {
+                  "body": "",
+                  "code": 400,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Invalid status value",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/findByStatus",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "GET",
+                    "name": "findPetsByStatus",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Bad Request"
+                },
+                "successful operation": {
+                  "body": "",
+                  "code": 200,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/findByStatus",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "GET",
+                    "name": "findPetsByStatus",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "OK"
+                }
+              },
+              "testScript": "",
+              "v": "16"
+            },
+            {
+              "_ref_id": "req_muqnuis6_c1af1ae9-861f-48d8-847b-dfc49901e142",
+              "auth": {
+                "$redacted": "object"
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "endpoint": "<<mockUrl>>/v2/pet/<<petId>>",
+              "headers": [],
+              "method": "GET",
+              "name": "getPetById",
+              "params": [],
+              "preRequestScript": "",
+              "requestVariables": [
+                {
+                  "active": true,
+                  "key": "petId",
+                  "value": ""
+                }
+              ],
+              "responses": {
+                "Invalid ID supplied": {
+                  "body": "",
+                  "code": 400,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Invalid ID supplied",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "GET",
+                    "name": "getPetById",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Bad Request"
+                },
+                "Pet not found": {
+                  "body": "",
+                  "code": 404,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Pet not found",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "GET",
+                    "name": "getPetById",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Not Found"
+                },
+                "successful operation": {
+                  "body": "",
+                  "code": 200,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "GET",
+                    "name": "getPetById",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "OK"
+                }
+              },
+              "testScript": "",
+              "v": "16"
+            },
+            {
+              "_ref_id": "req_muqnuis7_340f6b33-92c5-48d0-8faa-c8cb07a9491c",
+              "auth": {
+                "$redacted": "object"
+              },
+              "body": {
+                "body": "name: \nstatus: ",
+                "contentType": "application/x-www-form-urlencoded"
+              },
+              "endpoint": "<<mockUrl>>/v2/pet/<<petId>>",
+              "headers": [],
+              "method": "POST",
+              "name": "updatePetWithForm",
+              "params": [],
+              "preRequestScript": "",
+              "requestVariables": [
+                {
+                  "active": true,
+                  "key": "petId",
+                  "value": ""
+                }
+              ],
+              "responses": {
+                "Invalid input": {
+                  "body": "",
+                  "code": 405,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Invalid input",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "POST",
+                    "name": "updatePetWithForm",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Method Not Allowed"
+                }
+              },
+              "testScript": "",
+              "v": "16"
+            },
+            {
+              "_ref_id": "req_muqnuis8_df5edd58-e302-48eb-be02-585d4c20f16e",
+              "auth": {
+                "$redacted": "object"
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "endpoint": "<<mockUrl>>/v2/pet/<<petId>>",
+              "headers": [
+                {
+                  "active": true,
+                  "description": "",
+                  "key": "api_key",
+                  "value": ""
+                }
+              ],
+              "method": "DELETE",
+              "name": "deletePet",
+              "params": [],
+              "preRequestScript": "",
+              "requestVariables": [
+                {
+                  "active": true,
+                  "key": "petId",
+                  "value": ""
+                }
+              ],
+              "responses": {
+                "Invalid ID supplied": {
+                  "body": "",
+                  "code": 400,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Invalid ID supplied",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "DELETE",
+                    "name": "deletePet",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Bad Request"
+                },
+                "Pet not found": {
+                  "body": "",
+                  "code": 404,
+                  "headers": [
+                    {
+                      "$truncated": true
+                    }
+                  ],
+                  "name": "Pet not found",
+                  "originalRequest": {
+                    "auth": {
+                      "$redacted": "object"
+                    },
+                    "body": {
+                      "$truncated": true
+                    },
+                    "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                    "headers": {
+                      "$truncated": true
+                    },
+                    "method": "DELETE",
+                    "name": "deletePet",
+                    "params": {
+                      "$truncated": true
+                    },
+                    "requestVariables": {
+                      "$truncated": true
+                    },
+                    "v": "6"
+                  },
+                  "status": "Not Found"
+                }
+              },
+              "testScript": "",
+              "v": "16"
+            }
+          ],
+          "v": 10
+        }
+      ],
+      "durationMs": 85,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/mock-server/constants/mock-server-coll-request-example.ts": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0",
+          "file": "src/mock-server/constants/mock-server-coll-request-example.ts",
+          "line": 6,
+          "sides": [
+            "collectionName falls back to its default"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0",
+          "side": "collectionName falls back to its default",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "50cbc4200976",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/mock-server/constants/mock-server-coll-request-example.ts"
+        ],
+        "digest": "24c696edbc17"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": false,
+        "unstablePaths": [
+          "returned.0.data._ref_id",
+          "returned.0.requests.0._ref_id",
+          "returned.0.requests.1._ref_id",
+          "returned.0.requests.2._ref_id",
+          "returned.0.requests.3._ref_id",
+          "returned.0.requests.4._ref_id",
+          "returned.0.requests.5._ref_id"
+        ],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-30-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:30:parseIntSafe",
+      "covers": [
+        "src/utils.ts#33:if:0",
+        "src/utils.ts#35:cond-expr:0"
+      ],
+      "reaches": {
+        "src/utils.ts#33:if:0": [
+          "else"
+        ],
+        "src/utils.ts#35:cond-expr:0": [
+          "whenFalse"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927256044,
+      "invoked": true,
+      "returned": {
+        "$undefined": true
+      },
+      "durationMs": 28,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "0": [
+            1
+          ],
+          "1": [
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#33:if:0",
+          "file": "src/utils.ts",
+          "line": 33,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#35:cond-expr:0",
+          "file": "src/utils.ts",
+          "line": 35,
+          "sides": [
+            "whenFalse"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#33:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#35:cond-expr:0",
+          "side": "whenFalse",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "ac61bce56b34",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-185-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:185:validateSMTPEmail",
+      "covers": [
+        "src/utils.ts#188:binary-expr:0"
+      ],
+      "reaches": {
+        "src/utils.ts#188:binary-expr:0": [
+          "emailRegex1.test(email)",
+          "emailRegex2.test(email)",
+          "emailRegex3.test(email)"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927256073,
+      "invoked": true,
+      "returned": false,
+      "durationMs": 26,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "3": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#188:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 188,
+          "sides": [
+            "emailRegex1.test(email)",
+            "emailRegex2.test(email)",
+            "emailRegex3.test(email)"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#188:binary-expr:0",
+          "side": "emailRegex1.test(email)",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#188:binary-expr:0",
+          "side": "emailRegex2.test(email)",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#188:binary-expr:0",
+          "side": "emailRegex3.test(email)",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "909e9a363b1c",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-199-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:199:validateSMTPUrl",
+      "covers": [
+        "src/utils.ts#206:binary-expr:0",
+        "src/utils.ts#206:if:0",
+        "src/utils.ts#208:if:0",
+        "src/utils.ts#209:if:0",
+        "src/utils.ts#210:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#206:binary-expr:0": [
+          "!url",
+          "url.length === 0"
+        ],
+        "src/utils.ts#206:if:0": [
+          "else"
+        ],
+        "src/utils.ts#208:if:0": [
+          "else"
+        ],
+        "src/utils.ts#209:if:0": [
+          "else"
+        ],
+        "src/utils.ts#210:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927256100,
+      "invoked": true,
+      "returned": false,
+      "durationMs": 46,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "4": [
+            1
+          ],
+          "5": [
+            0,
+            1
+          ],
+          "6": [
+            1
+          ],
+          "7": [
+            1
+          ],
+          "8": [
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#206:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 206,
+          "sides": [
+            "!url",
+            "url.length === 0"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#206:if:0",
+          "file": "src/utils.ts",
+          "line": 206,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#208:if:0",
+          "file": "src/utils.ts",
+          "line": 208,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#209:if:0",
+          "file": "src/utils.ts",
+          "line": 209,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#210:if:0",
+          "file": "src/utils.ts",
+          "line": 210,
+          "sides": [
+            "else"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#206:binary-expr:0",
+          "side": "!url",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#206:binary-expr:0",
+          "side": "url.length === 0",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#206:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#208:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#209:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#210:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "c479cacec90d",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-199-entry-0-4",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:199:validateSMTPUrl",
+      "covers": [
+        "src/utils.ts#206:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#206:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927256149,
+      "invoked": true,
+      "returned": false,
+      "durationMs": 43,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "4": [
+            0
+          ],
+          "5": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#206:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 206,
+          "sides": [
+            "!url"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#206:if:0",
+          "file": "src/utils.ts",
+          "line": 206,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#206:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "f9a7d54d67ed",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-261-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:261:isValidLength",
+      "covers": [
+        "src/utils.ts#262:binary-expr:0",
+        "src/utils.ts#262:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#262:binary-expr:0": [
+          "!title",
+          "title.trim() === ''",
+          "title.length < length"
+        ],
+        "src/utils.ts#262:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927256194,
+      "invoked": true,
+      "returned": true,
+      "durationMs": 29,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "17": [
+            1
+          ],
+          "18": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#262:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 262,
+          "sides": [
+            "!title",
+            "title.trim() === ''",
+            "title.length < length"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#262:if:0",
+          "file": "src/utils.ts",
+          "line": 262,
+          "sides": [
+            "else"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#262:binary-expr:0",
+          "side": "!title",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#262:binary-expr:0",
+          "side": "title.trim() === ''",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#262:binary-expr:0",
+          "side": "title.length < length",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#262:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "00abe0eba062",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-278-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:278:escapeSqlLikeString",
+      "covers": [
+        "src/utils.ts#279:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#279:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927256229,
+      "invoked": true,
+      "returned": "\\\"abc\\\"",
+      "durationMs": 48,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "19": [
+            1
+          ],
+          "20": [
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#279:if:0",
+          "file": "src/utils.ts",
+          "line": 279,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#282:switch:0",
+          "file": "src/utils.ts",
+          "line": 282,
+          "sides": [
+            "case '\"'",
+            "case \"'\"",
+            "case '\\\\'",
+            "case '%'"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#279:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "e5fa9b0586fa",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-278-entry-0-0-via-1",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:281:<arg1 of str.replace>",
+      "covers": [
+        "src/utils.ts#282:switch:0"
+      ],
+      "reaches": {
+        "src/utils.ts#282:switch:0": [
+          "case '\"'",
+          "case \"'\"",
+          "case '\\\\'",
+          "case '%'"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927263875,
+      "invoked": true,
+      "returned": "\\\"abc\\\"",
+      "durationMs": 887,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "19": [
+            1
+          ],
+          "20": [
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#279:if:0",
+          "file": "src/utils.ts",
+          "line": 279,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#282:switch:0",
+          "file": "src/utils.ts",
+          "line": 282,
+          "sides": [
+            "case '\"'",
+            "case \"'\"",
+            "case '\\\\'",
+            "case '%'"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#282:switch:0",
+          "side": "case '\"'",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#282:switch:0",
+          "side": "case \"'\"",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#282:switch:0",
+          "side": "case '\\\\'",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#282:switch:0",
+          "side": "case '%'",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "8a044754b0b9",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-311-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:311:calculateExpirationDate",
+      "covers": [
+        "src/utils.ts#312:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#312:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927264762,
+      "invoked": true,
+      "returned": {
+        "$date": "2026-10-02T07:47:44.763Z"
+      },
+      "durationMs": 35,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "21": [
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#312:if:0",
+          "file": "src/utils.ts",
+          "line": 312,
+          "sides": [
+            "else"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#312:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "9839fe3798bf",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": false,
+        "unstablePaths": [
+          "returned.$date"
+        ],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-323-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:323:transformCollectionData",
+      "covers": [
+        "src/utils.ts#326:if:0",
+        "src/utils.ts#330:cond-expr:0"
+      ],
+      "reaches": {
+        "src/utils.ts#326:if:0": [
+          "else"
+        ],
+        "src/utils.ts#330:cond-expr:0": [
+          "whenTrue"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927264800,
+      "invoked": true,
+      "returned": "\"{}\"",
+      "durationMs": 20,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "22": [
+            1
+          ],
+          "23": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#326:if:0",
+          "file": "src/utils.ts",
+          "line": 326,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#330:cond-expr:0",
+          "file": "src/utils.ts",
+          "line": 330,
+          "sides": [
+            "whenTrue"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#326:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#330:cond-expr:0",
+          "side": "whenTrue",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "aa7685423b83",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-344-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:344:encrypt",
+      "covers": [
+        "src/utils.ts#345:if:0",
+        "src/utils.ts#347:binary-expr:0",
+        "src/utils.ts#347:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#345:if:0": [
+          "else"
+        ],
+        "src/utils.ts#347:binary-expr:0": [
+          "!text",
+          "text === ''"
+        ],
+        "src/utils.ts#347:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927264821,
+      "invoked": true,
+      "threw": {
+        "$error": "RangeError",
+        "message": "Invalid key length",
+        "code": "ERR_CRYPTO_INVALID_KEYLEN"
+      },
+      "durationMs": 23,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "25": [
+            1
+          ],
+          "26": [
+            1
+          ],
+          "27": [
+            0,
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#345:if:0",
+          "file": "src/utils.ts",
+          "line": 345,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#347:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 347,
+          "sides": [
+            "!text",
+            "text === ''"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#347:if:0",
+          "file": "src/utils.ts",
+          "line": 347,
+          "sides": [
+            "else"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#345:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#347:binary-expr:0",
+          "side": "!text",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#347:binary-expr:0",
+          "side": "text === ''",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#347:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "f64f362738e8",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/errors.ts",
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-344-entry-0-9",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:344:encrypt",
+      "covers": [
+        "src/utils.ts#347:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#347:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927264845,
+      "invoked": true,
+      "returned": {
+        "$undefined": true
+      },
+      "durationMs": 19,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "25": [
+            1
+          ],
+          "26": [
+            0
+          ],
+          "27": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#345:if:0",
+          "file": "src/utils.ts",
+          "line": 345,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#347:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 347,
+          "sides": [
+            "!text"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#347:if:0",
+          "file": "src/utils.ts",
+          "line": 347,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#347:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "a366c5c109b5",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/errors.ts",
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-366-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:366:decrypt",
+      "covers": [
+        "src/utils.ts#370:if:0",
+        "src/utils.ts#372:binary-expr:0",
+        "src/utils.ts#372:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#370:if:0": [
+          "else"
+        ],
+        "src/utils.ts#372:binary-expr:0": [
+          "!encryptedData",
+          "encryptedData === ''"
+        ],
+        "src/utils.ts#372:if:0": [
+          "else"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927264866,
+      "invoked": true,
+      "threw": {
+        "$error": "TypeError",
+        "message": "Invalid initialization vector",
+        "code": "ERR_CRYPTO_INVALID_IV"
+      },
+      "durationMs": 20,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "29": [
+            1
+          ],
+          "30": [
+            1
+          ],
+          "31": [
+            0,
+            1
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#370:if:0",
+          "file": "src/utils.ts",
+          "line": 370,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#372:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 372,
+          "sides": [
+            "!encryptedData",
+            "encryptedData === ''"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#372:if:0",
+          "file": "src/utils.ts",
+          "line": 372,
+          "sides": [
+            "else"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#370:if:0",
+          "side": "else",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#372:binary-expr:0",
+          "side": "!encryptedData",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#372:binary-expr:0",
+          "side": "encryptedData === ''",
+          "verdict": "verified"
+        },
+        {
+          "armId": "src/utils.ts#372:if:0",
+          "side": "else",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "d8e9ef801530",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/errors.ts",
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-366-entry-0-9",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:366:decrypt",
+      "covers": [
+        "src/utils.ts#372:if:0"
+      ],
+      "reaches": {
+        "src/utils.ts#372:if:0": [
+          "then"
+        ]
+      },
+      "source": "recorded",
+      "clockEpoch": 1790927264887,
+      "invoked": true,
+      "returned": {
+        "$undefined": true
+      },
+      "durationMs": 16,
+      "rowTimeoutMs": 10000,
+      "console": [],
+      "boundaryCalls": [],
+      "movedBranches": {
+        "src/utils.ts": {
+          "29": [
+            1
+          ],
+          "30": [
+            0
+          ],
+          "31": [
+            0
+          ]
+        }
+      },
+      "movedBranchesBeforeSubject": {},
+      "subjectCallStarted": true,
+      "armsMoved": [
+        {
+          "armId": "src/utils.ts#370:if:0",
+          "file": "src/utils.ts",
+          "line": 370,
+          "sides": [
+            "else"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#372:binary-expr:0",
+          "file": "src/utils.ts",
+          "line": 372,
+          "sides": [
+            "!encryptedData"
+          ]
+        },
+        {
+          "armId": "src/utils.ts#372:if:0",
+          "file": "src/utils.ts",
+          "line": 372,
+          "sides": [
+            "then"
+          ]
+        }
+      ],
+      "claimVerdicts": [
+        {
+          "armId": "src/utils.ts#372:if:0",
+          "side": "then",
+          "verdict": "verified"
+        }
+      ],
+      "__fingerprint": "5bc776ecd171",
+      "__recordedNode": 22,
+      "__recordedBy": "07ffed9ac9d0",
+      "__recording": "28065-1201c1",
+      "__sources": {
+        "roots": [
+          "src/errors.ts",
+          "src/utils.ts"
+        ],
+        "digest": "ac028184de47"
+      },
+      "determinism": {
+        "compared": true,
+        "stable": true,
+        "unstablePaths": [],
+        "checkedAt": "2026-10-02T07:48:05.852Z"
+      }
+    }
+  ],
+  "skipped": [],
+  "shadowed": [],
+  "rekeyed": [],
+  "droppedAnswers": [],
+  "falseClaimsAtRecordTime": [],
+  "unmeasurableClaimsAtRecordTime": [],
+  "reuse": {
+    "rows": 23,
+    "recordedThisRun": 23,
+    "takenFromArtifact": 0,
+    "recordedAgainBecause": {
+      "proposal": 0,
+      "code": 0,
+      "harnessFailure": 0,
+      "environmentSetUp": 0,
+      "verdictElsewhere": 0,
+      "cigateRed": 0
+    },
+    "why": {
+      "sweep-lit-src-auth-helper-ts-89-entry-0-0": "it had no recording",
+      "sweep-lit-src-auth-helper-ts-113-entry-0-0": "it had no recording",
+      "sweep-lit-src-auth-helper-ts-113-entry-0-9": "it had no recording",
+      "sweep-lit-src-auth-helper-ts-133-entry-0-0": "it had no recording",
+      "sweep-lit-src-auth-helper-ts-215-entry-0-0": "it had no recording",
+      "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-0": "it had no recording",
+      "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-4": "it had no recording",
+      "sweep-lit-src-auth-stateless-state-store-ts-51-entry-0-0": "it had no recording",
+      "sweep-lit-src-mailer-helper-ts-17-entry-0-0": "it had no recording",
+      "sweep-lit-src-mock-server-constants-mock-server-coll-request-example-ts-5-entry-0-4": "it had no recording",
+      "sweep-lit-src-utils-ts-30-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-185-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-199-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-199-entry-0-4": "it had no recording",
+      "sweep-lit-src-utils-ts-261-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-278-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-278-entry-0-0-via-1": "it had no recording",
+      "sweep-lit-src-utils-ts-311-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-323-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-344-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-344-entry-0-9": "it had no recording",
+      "sweep-lit-src-utils-ts-366-entry-0-0": "it had no recording",
+      "sweep-lit-src-utils-ts-366-entry-0-9": "it had no recording"
+    }
+  },
+  "environment": {
+    "causes": [],
+    "defect": null
+  },
+  "recordingComplete": true,
+  "sources": {
+    "files": {
+      "package.json": "866b33d01268",
+      "prisma/schema.prisma": "33b173999f0b",
+      "src/auth/helper.ts": "06c5efc14b27",
+      "src/auth/redirect-uri.validator.ts": "577062367181",
+      "src/auth/stateless-state-store.ts": "ae193dea80b4",
+      "src/errors.ts": "dc3826b0360c",
+      "src/generated/prisma/client.ts": "1c3fea12546d",
+      "src/generated/prisma/commonInputTypes.ts": "561dbf70ca9a",
+      "src/generated/prisma/enums.ts": "29f0118e52de",
+      "src/generated/prisma/internal/class.ts": "dba7e4a869b8",
+      "src/generated/prisma/internal/prismaNamespace.ts": "dec1f4991244",
+      "src/generated/prisma/models.ts": "2bd9833a791b",
+      "src/generated/prisma/models/Account.ts": "6740ea79e6cc",
+      "src/generated/prisma/models/InfraConfig.ts": "5d3117f8c857",
+      "src/generated/prisma/models/InfraToken.ts": "9f4c3f617dd9",
+      "src/generated/prisma/models/InvitedUsers.ts": "620f9aa2ddd2",
+      "src/generated/prisma/models/MockServer.ts": "850262a1baad",
+      "src/generated/prisma/models/MockServerActivity.ts": "9e1a89ca7885",
+      "src/generated/prisma/models/MockServerLog.ts": "2ef6b7bac0ce",
+      "src/generated/prisma/models/PersonalAccessToken.ts": "be136d03ea10",
+      "src/generated/prisma/models/PublishedDocs.ts": "529035ac79cd",
+      "src/generated/prisma/models/Shortcode.ts": "879bfa67e605",
+      "src/generated/prisma/models/Team.ts": "a5731943760c",
+      "src/generated/prisma/models/TeamCollection.ts": "776c0b83f649",
+      "src/generated/prisma/models/TeamEnvironment.ts": "3b5902b2d6b4",
+      "src/generated/prisma/models/TeamInvitation.ts": "f93e1f1921fa",
+      "src/generated/prisma/models/TeamMember.ts": "35b0a66728cb",
+      "src/generated/prisma/models/TeamRequest.ts": "d06fc4028736",
+      "src/generated/prisma/models/User.ts": "0bfc607abc9c",
+      "src/generated/prisma/models/UserCollection.ts": "e36e94c08901",
+      "src/generated/prisma/models/UserEnvironment.ts": "b2b15a5a20ff",
+      "src/generated/prisma/models/UserHistory.ts": "04bad9147836",
+      "src/generated/prisma/models/UserRequest.ts": "de06b543188d",
+      "src/generated/prisma/models/UserSettings.ts": "5e4792d9c34b",
+      "src/generated/prisma/models/VerificationToken.ts": "d9d2bf2cf450",
+      "src/mailer/helper.ts": "dee8306a8184",
+      "src/mock-server/constants/mock-server-coll-request-example.ts": "e2043b3964a9",
+      "src/team/team.model.ts": "f059f9761e97",
+      "src/types/AuthTokens.ts": "f96262975d88",
+      "src/types/RESTError.ts": "27ad1e360247",
+      "src/utils.ts": "2b51cbbe4b40",
+      "tsconfig.build.json": "bcdd543cf1d9",
+      "tsconfig.json": "1b7bddb39b8e",
+      "vitest.config.mts": "3c90067afa15"
+    }
+  },
+  "overwrite": null,
+  "determinismCheckedAt": "2026-10-02T07:48:05.852Z"
+}

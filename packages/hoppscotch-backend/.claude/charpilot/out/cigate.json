@@ -1,0 +1,47 @@
+{
+  "stage": "5-cigate",
+  "ranAt": "2026-10-02T07:48:07.559Z",
+  "tests": {
+    "command": "vitest run test/characterization (the repo's own config)",
+    "files": 0,
+    "failed": 0
+  },
+  "typecheck": {
+    "skipped": "the repo declares no typecheck script"
+  },
+  "withheld": [],
+  "pipelineDefects": [
+    {
+      "kind": "red-without-a-failure",
+      "cause": "no-test-files",
+      "message": "vitest exited 1 and named no failed test and no unhandled error - its own exit reason: [no-test-files] vitest collected no test file (\"No test files found, exiting with code 1\"): the config's `include` matches nothing under the filter"
+    }
+  ],
+  "measurements": [],
+  "notes": [],
+  "targetNode": {
+    "node": "/opt/node/22/bin/node",
+    "major": 22,
+    "source": "CHARPILOT_TARGET_NODE",
+    "available": true,
+    "why": null
+  },
+  "scope": "full",
+  "scopeWhy": "there is no record of a previous pass to build on",
+  "gatedFiles": [],
+  "ledger": {
+    "manifest": null,
+    "specs": {},
+    "context": "8aa1460763507b9826e1761b4b00fec28247efec36aebdbb303fb3374fabe0f8",
+    "green": false,
+    "scope": "full",
+    "why": "there is no record of a previous pass to build on",
+    "files": [],
+    "at": "2026-10-02T07:48:07.559Z",
+    "fullAt": "2026-10-02T07:48:07.559Z",
+    "partialsSinceFull": 0,
+    "fullManifest": null,
+    "fullContext": "8aa1460763507b9826e1761b4b00fec28247efec36aebdbb303fb3374fabe0f8",
+    "fullGreen": false
+  }
+}
