@@ -1,0 +1,1453 @@
+{
+  "stage": 5,
+  "writtenAt": "2026-10-02T07:48:06.966Z",
+  "recordedAgainst": {
+    "gitSha": "63273f8e599e73f0fb38c0739314e8d46b6bc83d",
+    "gitBranch": "characterize/63273f8e5-20261002T043937Z",
+    "gitDirty": true
+  },
+  "harness": "07ffed9ac9d0",
+  "emitter": "59127df68e23",
+  "rows": [
+    {
+      "id": "sweep-lit-src-auth-helper-ts-89-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:89:subscriptionContextCookieParser",
+      "armIds": [
+        "src/auth/helper.ts#92:if:0",
+        "src/auth/helper.ts#93:binary-expr:0"
+      ],
+      "stableIds": [
+        "src/auth/helper.ts#f86634f1c7:if",
+        "src/auth/helper.ts#134f5556ab:binary-expr"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#92:if:0": [
+          "then"
+        ],
+        "src/auth/helper.ts#93:binary-expr:0": [
+          "!cookies[AuthTokenType.ACCESS_TOKEN]",
+          "!cookies[AuthTokenType.REFRESH_TOKEN]"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"tok\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "HttpException",
+          "message": "auth/cookies_not_found",
+          "response": "auth/cookies_not_found",
+          "status": 400,
+          "options": {
+            "cause": {
+              "$error": "Error",
+              "message": "auth/cookies_not_found"
+            }
+          },
+          "cause": {
+            "$error": "Error",
+            "message": "auth/cookies_not_found"
+          }
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "7db2127700ec"
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-113-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:113:authProviderCheck",
+      "armIds": [
+        "src/auth/helper.ts#117:if:0",
+        "src/auth/helper.ts#121:binary-expr:0",
+        "src/auth/helper.ts#123:if:0"
+      ],
+      "stableIds": [
+        "src/auth/helper.ts#ec1185ffc5:if",
+        "src/auth/helper.ts#4885bac8ab:binary-expr",
+        "src/auth/helper.ts#08903c5b58:if"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#117:if:0": [
+          "else"
+        ],
+        "src/auth/helper.ts#121:binary-expr:0": [
+          "VITE_ALLOWED_AUTH_PROVIDERS?.split(',')"
+        ],
+        "src/auth/helper.ts#123:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"abc\"",
+          "build": null
+        },
+        {
+          "value": "\"abc\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": false
+      },
+      "boundaryCalls": [],
+      "observation": "018b723ff444"
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-113-entry-0-9",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:113:authProviderCheck",
+      "armIds": [
+        "src/auth/helper.ts#117:if:0"
+      ],
+      "stableIds": [
+        "src/auth/helper.ts#ec1185ffc5:if"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#117:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "undefined"
+        },
+        {
+          "value": "\"\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "Error",
+          "message": "auth/provider_not_specified"
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "3b53604da10f"
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-133-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:133:extractCookieAsKeyValuesFromHeaders",
+      "armIds": [
+        "src/auth/helper.ts#137:binary-expr:0",
+        "src/auth/helper.ts#139:if:0"
+      ],
+      "stableIds": [
+        "src/auth/helper.ts#5a1355ea7e:binary-expr",
+        "src/auth/helper.ts#c36daf2a40:if"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#137:binary-expr:0": [
+          "headers['cookie']",
+          "headers['Cookie']",
+          "headers['COOKIE']"
+        ],
+        "src/auth/helper.ts#139:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "{}"
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "HttpException",
+          "message": "auth/cookies_not_found",
+          "response": "auth/cookies_not_found",
+          "status": 400,
+          "options": {
+            "cause": {
+              "$error": "Error",
+              "message": "auth/cookies_not_found"
+            }
+          },
+          "cause": {
+            "$error": "Error",
+            "message": "auth/cookies_not_found"
+          }
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "8bfd2afc4fdb"
+    },
+    {
+      "id": "sweep-lit-src-auth-helper-ts-215-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/helper.ts:215:extractAccessTokenFromAuthRecords",
+      "armIds": [
+        "src/auth/helper.ts#218:binary-expr:0",
+        "src/auth/helper.ts#219:if:0"
+      ],
+      "stableIds": [
+        "src/auth/helper.ts#fd7e5afeda:binary-expr",
+        "src/auth/helper.ts#11e32c1f60:if"
+      ],
+      "reaches": {
+        "src/auth/helper.ts#218:binary-expr:0": [
+          "headers['authorization']",
+          "headers['Authorization']"
+        ],
+        "src/auth/helper.ts#219:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "{}"
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "HttpException",
+          "message": "auth/auth_header_not_found",
+          "response": "auth/auth_header_not_found",
+          "status": 400,
+          "options": {
+            "cause": {
+              "$error": "Error",
+              "message": "auth/auth_header_not_found"
+            }
+          },
+          "cause": {
+            "$error": "Error",
+            "message": "auth/auth_header_not_found"
+          }
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "b8c7b901bb4e"
+    },
+    {
+      "id": "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/redirect-uri.validator.ts:4:isValidLocalhostRedirectUri",
+      "armIds": [
+        "src/auth/redirect-uri.validator.ts#7:if:0"
+      ],
+      "stableIds": [
+        "src/auth/redirect-uri.validator.ts#ff8387876c:if"
+      ],
+      "reaches": {
+        "src/auth/redirect-uri.validator.ts#7:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"http://localhost:3000\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": false
+      },
+      "boundaryCalls": [],
+      "observation": "2a023a6b7ac0"
+    },
+    {
+      "id": "sweep-lit-src-auth-redirect-uri-validator-ts-4-entry-0-4",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/redirect-uri.validator.ts:4:isValidLocalhostRedirectUri",
+      "armIds": [
+        "src/auth/redirect-uri.validator.ts#7:if:0"
+      ],
+      "stableIds": [
+        "src/auth/redirect-uri.validator.ts#ff8387876c:if"
+      ],
+      "reaches": {
+        "src/auth/redirect-uri.validator.ts#7:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "undefined"
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": false
+      },
+      "boundaryCalls": [],
+      "observation": "d83142ba7ddd"
+    },
+    {
+      "id": "sweep-lit-src-auth-stateless-state-store-ts-51-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/auth/stateless-state-store.ts:51:StatelessStateStore.constructor",
+      "armIds": [
+        "src/auth/stateless-state-store.ts#57:if:0",
+        "src/auth/stateless-state-store.ts#67:binary-expr:0",
+        "src/auth/stateless-state-store.ts#69:binary-expr:0",
+        "src/auth/stateless-state-store.ts#70:binary-expr:0"
+      ],
+      "stableIds": [
+        "src/auth/stateless-state-store.ts#4670b3da16:if",
+        "src/auth/stateless-state-store.ts#6fd3548328:binary-expr",
+        "src/auth/stateless-state-store.ts#d6ff3f6b44:binary-expr",
+        "src/auth/stateless-state-store.ts#f3334c95f9:binary-expr"
+      ],
+      "reaches": {
+        "src/auth/stateless-state-store.ts#57:if:0": [
+          "else"
+        ],
+        "src/auth/stateless-state-store.ts#67:binary-expr:0": [
+          "secret"
+        ],
+        "src/auth/stateless-state-store.ts#69:binary-expr:0": [
+          "cookieName"
+        ],
+        "src/auth/stateless-state-store.ts#70:binary-expr:0": [
+          "secureCookies"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"tok\"",
+          "build": null
+        },
+        {
+          "value": "0",
+          "build": null
+        },
+        {
+          "value": "\"tok\"",
+          "build": null
+        },
+        {
+          "value": "true",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": {
+          "cookieName": "\"tok\"",
+          "maxAgeMs": "0",
+          "secret": {
+            "$redacted": "string",
+            "length": 5
+          },
+          "secureCookies": "true"
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "6e2dd9328d2b"
+    },
+    {
+      "id": "sweep-lit-src-mailer-helper-ts-17-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/mailer/helper.ts:17:getMailerAddressFrom",
+      "armIds": [
+        "src/mailer/helper.ts#18:binary-expr:0"
+      ],
+      "stableIds": [
+        "src/mailer/helper.ts#3480bccfab:binary-expr"
+      ],
+      "reaches": {
+        "src/mailer/helper.ts#18:binary-expr:0": [
+          "env.INFRA.MAILER_ADDRESS_FROM"
+        ]
+      },
+      "args": [
+        {
+          "value": "null",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "TypeError",
+          "message": "Cannot read properties of undefined (reading 'MAILER_ADDRESS_FROM')"
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "cc067350ce13"
+    },
+    {
+      "id": "sweep-lit-src-mock-server-constants-mock-server-coll-request-example-ts-5-entry-0-4",
+      "file": "sweep-lit.json",
+      "functionId": "src/mock-server/constants/mock-server-coll-request-example.ts:5:mockServerCollRequestExample",
+      "armIds": [
+        "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0"
+      ],
+      "stableIds": [
+        "src/mock-server/constants/mock-server-coll-request-example.ts#64fddd34c9:default-arg"
+      ],
+      "reaches": {
+        "src/mock-server/constants/mock-server-coll-request-example.ts#6:default-arg:0": [
+          "collectionName falls back to its default"
+        ]
+      },
+      "args": [
+        {
+          "build": "undefined"
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": [
+          {
+            "data": {
+              "_ref_id": "coll_muqnuis9_8e67d5db-9a58-475f-810d-9c59428ab2d4",
+              "auth": {
+                "$redacted": "object"
+              },
+              "headers": []
+            },
+            "folders": [],
+            "name": "Hoppscotch API Mock example",
+            "requests": [
+              {
+                "_ref_id": "req_muqnuis3_7c04a71b-e9e0-46f0-a86a-996f43e8d4c1",
+                "auth": {
+                  "$redacted": "object"
+                },
+                "body": {
+                  "body": "{\n\t\"id\": 1,\n\t\"category\": {\n\t\t\"id\": 1,\n\t\t\"name\": \"string\"\n\t},\n\t\"name\": \"doggie\",\n\t\"photoUrls\": [\n\t\t\"string\"\n\t],\n\t\"tags\": [],\n\t\"status\": \"available\"\n}",
+                  "contentType": "application/json"
+                },
+                "endpoint": "<<mockUrl>>/v2/pet",
+                "headers": [],
+                "method": "POST",
+                "name": "addPet",
+                "params": [],
+                "preRequestScript": "",
+                "requestVariables": [],
+                "responses": {
+                  "Invalid input": {
+                    "body": "",
+                    "code": 405,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Invalid input",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "<<mockUrl>>/v2/pet",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "POST",
+                      "name": "addPet",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Method Not Allowed"
+                  }
+                },
+                "testScript": "",
+                "v": "16"
+              },
+              {
+                "_ref_id": "req_muqnuis4_450367ed-a4ba-4c77-be28-15bf9670d294",
+                "auth": {
+                  "$redacted": "object"
+                },
+                "body": {
+                  "body": "{\n\t\"id\": 1,\n\t\"category\": {\n\t\t\"id\": 1,\n\t\t\"name\": \"string\"\n\t},\n\t\"name\": \"doggie\",\n\t\"photoUrls\": [\n\t\t\"string\"\n\t],\n\t\"tags\": [],\n\t\"status\": \"available\"\n}",
+                  "contentType": "application/json"
+                },
+                "endpoint": "<<mockUrl>>/v2/pet",
+                "headers": [],
+                "method": "PUT",
+                "name": "updatePet",
+                "params": [],
+                "preRequestScript": "",
+                "requestVariables": [],
+                "responses": {
+                  "Invalid ID supplied": {
+                    "body": "",
+                    "code": 400,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Invalid ID supplied",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "<<mockUrl>>/v2/pet",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "PUT",
+                      "name": "updatePet",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Bad Request"
+                  },
+                  "Pet not found": {
+                    "body": "",
+                    "code": 404,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Pet not found",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "<<mockUrl>>/v2/pet",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "PUT",
+                      "name": "updatePet",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Not Found"
+                  },
+                  "Validation exception": {
+                    "body": "",
+                    "code": 405,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Validation exception",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "<<mockUrl>>/v2/pet",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "PUT",
+                      "name": "updatePet",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Method Not Allowed"
+                  }
+                },
+                "testScript": "",
+                "v": "16"
+              },
+              {
+                "_ref_id": "req_muqnuis5_185d6193-5a76-4d38-a522-9f53cdffb7c7",
+                "auth": {
+                  "$redacted": "object"
+                },
+                "body": {
+                  "body": null,
+                  "contentType": null
+                },
+                "endpoint": "<<mockUrl>>/v2/pet/findByStatus",
+                "headers": [],
+                "method": "GET",
+                "name": "findPetsByStatus",
+                "params": [
+                  {
+                    "active": true,
+                    "description": "Status values that need to be considered for filter",
+                    "key": "status",
+                    "value": ""
+                  }
+                ],
+                "preRequestScript": "",
+                "requestVariables": [],
+                "responses": {
+                  "Invalid status value": {
+                    "body": "",
+                    "code": 400,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Invalid status value",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/findByStatus",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "GET",
+                      "name": "findPetsByStatus",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Bad Request"
+                  },
+                  "successful operation": {
+                    "body": "",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "successful operation",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/findByStatus",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "GET",
+                      "name": "findPetsByStatus",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "OK"
+                  }
+                },
+                "testScript": "",
+                "v": "16"
+              },
+              {
+                "_ref_id": "req_muqnuis6_c1af1ae9-861f-48d8-847b-dfc49901e142",
+                "auth": {
+                  "$redacted": "object"
+                },
+                "body": {
+                  "body": null,
+                  "contentType": null
+                },
+                "endpoint": "<<mockUrl>>/v2/pet/<<petId>>",
+                "headers": [],
+                "method": "GET",
+                "name": "getPetById",
+                "params": [],
+                "preRequestScript": "",
+                "requestVariables": [
+                  {
+                    "active": true,
+                    "key": "petId",
+                    "value": ""
+                  }
+                ],
+                "responses": {
+                  "Invalid ID supplied": {
+                    "body": "",
+                    "code": 400,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Invalid ID supplied",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "GET",
+                      "name": "getPetById",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Bad Request"
+                  },
+                  "Pet not found": {
+                    "body": "",
+                    "code": 404,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Pet not found",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "GET",
+                      "name": "getPetById",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Not Found"
+                  },
+                  "successful operation": {
+                    "body": "",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "successful operation",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "GET",
+                      "name": "getPetById",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "OK"
+                  }
+                },
+                "testScript": "",
+                "v": "16"
+              },
+              {
+                "_ref_id": "req_muqnuis7_340f6b33-92c5-48d0-8faa-c8cb07a9491c",
+                "auth": {
+                  "$redacted": "object"
+                },
+                "body": {
+                  "body": "name: \nstatus: ",
+                  "contentType": "application/x-www-form-urlencoded"
+                },
+                "endpoint": "<<mockUrl>>/v2/pet/<<petId>>",
+                "headers": [],
+                "method": "POST",
+                "name": "updatePetWithForm",
+                "params": [],
+                "preRequestScript": "",
+                "requestVariables": [
+                  {
+                    "active": true,
+                    "key": "petId",
+                    "value": ""
+                  }
+                ],
+                "responses": {
+                  "Invalid input": {
+                    "body": "",
+                    "code": 405,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Invalid input",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "POST",
+                      "name": "updatePetWithForm",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Method Not Allowed"
+                  }
+                },
+                "testScript": "",
+                "v": "16"
+              },
+              {
+                "_ref_id": "req_muqnuis8_df5edd58-e302-48eb-be02-585d4c20f16e",
+                "auth": {
+                  "$redacted": "object"
+                },
+                "body": {
+                  "body": null,
+                  "contentType": null
+                },
+                "endpoint": "<<mockUrl>>/v2/pet/<<petId>>",
+                "headers": [
+                  {
+                    "active": true,
+                    "description": "",
+                    "key": "api_key",
+                    "value": ""
+                  }
+                ],
+                "method": "DELETE",
+                "name": "deletePet",
+                "params": [],
+                "preRequestScript": "",
+                "requestVariables": [
+                  {
+                    "active": true,
+                    "key": "petId",
+                    "value": ""
+                  }
+                ],
+                "responses": {
+                  "Invalid ID supplied": {
+                    "body": "",
+                    "code": 400,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Invalid ID supplied",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "DELETE",
+                      "name": "deletePet",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Bad Request"
+                  },
+                  "Pet not found": {
+                    "body": "",
+                    "code": 404,
+                    "headers": [
+                      {
+                        "$truncated": true
+                      }
+                    ],
+                    "name": "Pet not found",
+                    "originalRequest": {
+                      "auth": {
+                        "$redacted": "object"
+                      },
+                      "body": {
+                        "$truncated": true
+                      },
+                      "endpoint": "petstore.swagger.io/v2/pet/<<petId>>",
+                      "headers": {
+                        "$truncated": true
+                      },
+                      "method": "DELETE",
+                      "name": "deletePet",
+                      "params": {
+                        "$truncated": true
+                      },
+                      "requestVariables": {
+                        "$truncated": true
+                      },
+                      "v": "6"
+                    },
+                    "status": "Not Found"
+                  }
+                },
+                "testScript": "",
+                "v": "16"
+              }
+            ],
+            "v": 10
+          }
+        ]
+      },
+      "boundaryCalls": [],
+      "observation": "8d3c7737cd10"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-30-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:30:parseIntSafe",
+      "armIds": [
+        "src/utils.ts#33:if:0",
+        "src/utils.ts#35:cond-expr:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#af8c7ad5d6:if",
+        "src/utils.ts#0ae10f8e68:cond-expr"
+      ],
+      "reaches": {
+        "src/utils.ts#33:if:0": [
+          "else"
+        ],
+        "src/utils.ts#35:cond-expr:0": [
+          "whenFalse"
+        ]
+      },
+      "args": [
+        {
+          "value": "null",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": {
+          "$undefined": true
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "25bdd11eea44"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-185-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:185:validateSMTPEmail",
+      "armIds": [
+        "src/utils.ts#188:binary-expr:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#9fe0773748:binary-expr"
+      ],
+      "reaches": {
+        "src/utils.ts#188:binary-expr:0": [
+          "emailRegex1.test(email)",
+          "emailRegex2.test(email)",
+          "emailRegex3.test(email)"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"a@b.co\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": false
+      },
+      "boundaryCalls": [],
+      "observation": "b9e033eabc86"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-199-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:199:validateSMTPUrl",
+      "armIds": [
+        "src/utils.ts#206:binary-expr:0",
+        "src/utils.ts#206:if:0",
+        "src/utils.ts#208:if:0",
+        "src/utils.ts#209:if:0",
+        "src/utils.ts#210:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#a3e97f210e:binary-expr",
+        "src/utils.ts#1e701c9123:if",
+        "src/utils.ts#711d3ff034:if",
+        "src/utils.ts#f936d8b327:if",
+        "src/utils.ts#7c7ad6db71:if"
+      ],
+      "reaches": {
+        "src/utils.ts#206:binary-expr:0": [
+          "!url",
+          "url.length === 0"
+        ],
+        "src/utils.ts#206:if:0": [
+          "else"
+        ],
+        "src/utils.ts#208:if:0": [
+          "else"
+        ],
+        "src/utils.ts#209:if:0": [
+          "else"
+        ],
+        "src/utils.ts#210:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"http://localhost:3000\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": false
+      },
+      "boundaryCalls": [],
+      "observation": "2c6a5917cfcc"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-199-entry-0-4",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:199:validateSMTPUrl",
+      "armIds": [
+        "src/utils.ts#206:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#1e701c9123:if"
+      ],
+      "reaches": {
+        "src/utils.ts#206:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "undefined"
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": false
+      },
+      "boundaryCalls": [],
+      "observation": "52f9171a18b6"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-261-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:261:isValidLength",
+      "armIds": [
+        "src/utils.ts#262:binary-expr:0",
+        "src/utils.ts#262:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#ca8855f529:binary-expr",
+        "src/utils.ts#ee566808a5:if"
+      ],
+      "reaches": {
+        "src/utils.ts#262:binary-expr:0": [
+          "!title",
+          "title.trim() === ''",
+          "title.length < length"
+        ],
+        "src/utils.ts#262:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"abc\"",
+          "build": null
+        },
+        {
+          "value": "0",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": true
+      },
+      "boundaryCalls": [],
+      "observation": "c7b95f5aebed"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-278-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:278:escapeSqlLikeString",
+      "armIds": [
+        "src/utils.ts#279:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#2a1aa308ea:if"
+      ],
+      "reaches": {
+        "src/utils.ts#279:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"abc\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": "\\\"abc\\\""
+      },
+      "boundaryCalls": [],
+      "observation": "1bfab47f0da0"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-278-entry-0-0-via-1",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:281:<arg1 of str.replace>",
+      "armIds": [
+        "src/utils.ts#282:switch:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#4108a035fa:switch"
+      ],
+      "reaches": {
+        "src/utils.ts#282:switch:0": [
+          "case '\"'",
+          "case \"'\"",
+          "case '\\\\'",
+          "case '%'"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"abc\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": "\\\"abc\\\""
+      },
+      "boundaryCalls": [],
+      "observation": "bc08076a8c91"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-311-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:311:calculateExpirationDate",
+      "armIds": [
+        "src/utils.ts#312:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#766b2b80ba:if"
+      ],
+      "reaches": {
+        "src/utils.ts#312:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "0",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": {
+          "$date": "2026-10-02T07:47:44.763Z"
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "50723f6827af"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-323-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:323:transformCollectionData",
+      "armIds": [
+        "src/utils.ts#326:if:0",
+        "src/utils.ts#330:cond-expr:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#6f8c47b168:if",
+        "src/utils.ts#3ac87b20c3:cond-expr"
+      ],
+      "reaches": {
+        "src/utils.ts#326:if:0": [
+          "else"
+        ],
+        "src/utils.ts#330:cond-expr:0": [
+          "whenTrue"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"{}\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": "\"{}\""
+      },
+      "boundaryCalls": [],
+      "observation": "246f4fcbe921"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-344-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:344:encrypt",
+      "armIds": [
+        "src/utils.ts#345:if:0",
+        "src/utils.ts#347:binary-expr:0",
+        "src/utils.ts#347:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#8db42a62fe:if",
+        "src/utils.ts#387f31d635:binary-expr",
+        "src/utils.ts#07a465e69d:if"
+      ],
+      "reaches": {
+        "src/utils.ts#345:if:0": [
+          "else"
+        ],
+        "src/utils.ts#347:binary-expr:0": [
+          "!text",
+          "text === ''"
+        ],
+        "src/utils.ts#347:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"abc\"",
+          "build": null
+        },
+        {
+          "value": "\"abc\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "RangeError",
+          "message": "Invalid key length",
+          "code": "ERR_CRYPTO_INVALID_KEYLEN"
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "9bb3147b655a"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-344-entry-0-9",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:344:encrypt",
+      "armIds": [
+        "src/utils.ts#347:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#07a465e69d:if"
+      ],
+      "reaches": {
+        "src/utils.ts#347:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "undefined"
+        },
+        {
+          "value": "\"\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": {
+          "$undefined": true
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "ce14d109e643"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-366-entry-0-0",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:366:decrypt",
+      "armIds": [
+        "src/utils.ts#370:if:0",
+        "src/utils.ts#372:binary-expr:0",
+        "src/utils.ts#372:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#8c6edb7c8a:if",
+        "src/utils.ts#b2eda413ca:binary-expr",
+        "src/utils.ts#dc40017734:if"
+      ],
+      "reaches": {
+        "src/utils.ts#370:if:0": [
+          "else"
+        ],
+        "src/utils.ts#372:binary-expr:0": [
+          "!encryptedData",
+          "encryptedData === ''"
+        ],
+        "src/utils.ts#372:if:0": [
+          "else"
+        ]
+      },
+      "args": [
+        {
+          "value": "\"tok\"",
+          "build": null
+        },
+        {
+          "value": "\"abc\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "threw": {
+          "$error": "TypeError",
+          "message": "Invalid initialization vector",
+          "code": "ERR_CRYPTO_INVALID_IV"
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "56192a50ca96"
+    },
+    {
+      "id": "sweep-lit-src-utils-ts-366-entry-0-9",
+      "file": "sweep-lit.json",
+      "functionId": "src/utils.ts:366:decrypt",
+      "armIds": [
+        "src/utils.ts#372:if:0"
+      ],
+      "stableIds": [
+        "src/utils.ts#dc40017734:if"
+      ],
+      "reaches": {
+        "src/utils.ts#372:if:0": [
+          "then"
+        ]
+      },
+      "args": [
+        {
+          "build": "undefined"
+        },
+        {
+          "value": "\"\"",
+          "build": null
+        }
+      ],
+      "ctorArgs": [],
+      "invokeReturned": null,
+      "outcome": {
+        "returned": {
+          "$undefined": true
+        }
+      },
+      "boundaryCalls": [],
+      "observation": "5521ba3f4a62"
+    }
+  ]
+}
