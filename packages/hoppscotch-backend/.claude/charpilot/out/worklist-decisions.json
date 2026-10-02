@@ -43,6 +43,8 @@
     ],
     "dealSays": "THE ROUND IS ALREADY DEALT, AS A QUEUE AND NOT AS BUNDLES. `queue` is 1 entry(ies) in LAUNCH ORDER, largest first. Launch 1 worker(s) on the first 1, hand each one the packet FILES its entry names, and THE MOMENT ONE RETURNS LAUNCH THE NEXT ENTRY. LAUNCH EVERY WORKER AS subagent_type \"charpilot-worker\" — it has no Agent tool, which is what lets this round use the whole concurrency cap. NEVER HAVE MORE THAN 1 IN FLIGHT: count launches minus returns, and launch only when that is below it. If a launch comes back \"Concurrent subagent limit reached\", that entry was NOT worked: put it back at the FRONT of the queue and launch it when the next worker returns. Do not skip it and do not leave it for next round. Do not re-sort it, do not re-deal it, and do not hand one worker several entries up front — it cannot start its second until its first is done, which is how the round's longest packet ends up waiting behind whatever landed beside it. A packet is still never split across workers: every entry hands over WHOLE packet files. MATERIALISE EACH ENTRY AS IT LANDS. Read its submission, record it and move on — do NOT hold the round's consolidation until the slowest worker is back. On run 20260918T073111Z round 5 the last worker finished at 10:25:30 and the parent was still consolidating at 10:34:48: nine minutes single-threaded with every worker idle. THE ROUND'S BUDGET IS 45 MINUTES. Keep launching until the queue is empty or the budget is spent; when it is spent, stop launching, take what has landed, SAY WHICH ENTRIES YOU NEVER LAUNCHED and end the round. They come back next round aimed by a coverage report. A round held open for one worker is the rest of the fan-out idle and no new evidence at all. EVERY ENTRY GOES TO A WORKER, AND TO ONE WORKER ONLY: 1 entry(ies), so 1 launch(es) in all, plus a relaunch only for an entry whose launch came back \"Concurrent subagent limit reached\". This holds in a small round and in a round of one entry: do NOT answer a packet yourself, and do NOT launch a second worker on an entry that already has one. A packet file is the whole job for one worker, and a second reader of it is a second reading of the same source with nothing new to find.",
     "says": "THIS FILE IS AN INDEX AND CARRIES NO BRIEF. Each entry below names one file that is a WHOLE, SELF-CONTAINED piece of work: open it and you can answer every item in it without opening anything else and without writing a script to take it apart. The packet's roster, its reading plan and every block its items share are at the top of that file, written once. Pick the packet you are going to answer, open that one file, and answer it. The largest is 321 bytes; the whole round is 321 bytes, and you never have to read that.",
+    "repeated": 1,
+    "repeatedSays": "THIS ROUND IS ASKING EXACTLY WHAT THE LAST ONE ASKED. No side was closed, so either the answers are not reaching the disk, or answering an item is creating its replacement. Two measured instances: a repair that trimmed the rows a fault named also dropped their siblings' answers (run 20260917T082737Z, 41 min for nothing), and a submission item that named one file to fix while its packet reserved another, so every repair minted a fresh fault (run 20260917T100643Z, 91 min, no coverage). Read the previous round's submissions before deriving anything new: if an answer was written and did not count, that is the defect, not the input.",
     "asks": {
       "worklist": {
         "signature": "worklist-refused",
@@ -51,7 +53,7 @@
       },
       "sweep": {
         "signature": "sweep-domain",
-        "repeated": 0,
+        "repeated": 1,
         "run": "20261002T043937Z"
       }
     },
@@ -61,6 +63,12 @@
         "run": "20261002T043937Z",
         "sides": {
           "worklist-refused": 1
+        }
+      },
+      "sweep": {
+        "run": "20261002T043937Z",
+        "sides": {
+          "sweep-domain": 1
         }
       }
     }

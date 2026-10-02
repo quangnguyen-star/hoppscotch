@@ -35,7 +35,7 @@
   "defects_digest": "ccd42870d2fc8002591dcf7f325438df5b7557cb",
   "partial": {
     "salvagedBy": "workflow.mjs",
-    "salvagedAt": "2026-10-02T04:43:28.090Z",
+    "salvagedAt": "2026-10-02T04:44:05.483Z",
     "exit": 75,
     "step": "sweep",
     "reason": null,
