@@ -1,0 +1,628 @@
+{
+  "stage": "2-dead-code",
+  "scannedAt": "2026-10-02T04:42:45.228Z",
+  "tool": "ts-morph getExportedDeclarations + findReferencesAsNodes",
+  "entrypointsTreatedAsLive": [
+    "/^src\\/index\\.ts$/",
+    "/^src\\/instrumentation\\.ts$/",
+    "/^src\\/server\\.ts$/",
+    "/^src\\/routes\\//"
+  ],
+  "totals": {
+    "deadExports": 52,
+    "deadOnlyReferencedByTests": 0,
+    "testFilesInProject": 1,
+    "srcFilesExamined": 239,
+    "branchSidesInsideThem": 15,
+    "denominator": 2707,
+    "correctedDenominator": 2692,
+    "deadFunctionIds": 18
+  },
+  "dead": [
+    {
+      "file": "src/errors.ts",
+      "name": "AUTH_FAIL",
+      "line": 25,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "USER_FB_DOCUMENT_DELETION_FAILED",
+      "line": 63,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "USER_DELETION_FAILED",
+      "line": 92,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "TEAMS_NOT_FOUND",
+      "line": 122,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "USER_COLLECTION_NOT_FOUND",
+      "line": 128,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "TEAM_USER_NO_FB_SYNCDATA",
+      "line": 178,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "TEAM_FB_COLL_PATH_RESOLVE_FAIL",
+      "line": 184,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "SENDER_EMAIL_INVALID",
+      "line": 347,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "TEAM_INVITE_NOT_VALID_VIEWER",
+      "line": 366,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "TEAM_INVITATION_NOT_FOUND",
+      "line": 373,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "TOKEN_EXPIRED",
+      "line": 576,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "MAILER_FROM_ADDRESS_UNDEFINED",
+      "line": 709,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "MAILER_SMTP_USER_UNDEFINED",
+      "line": 716,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "MAILER_SMTP_PASSWORD_UNDEFINED",
+      "line": 722,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "INFRA_CONFIG_NOT_LISTED",
+      "line": 762,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/errors.ts",
+      "name": "MOCK_SERVER_ALREADY_EXISTS",
+      "line": 923,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/utils.ts",
+      "name": "trace",
+      "line": 63,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": [
+        "src/utils.ts:63:trace"
+      ]
+    },
+    {
+      "file": "src/utils.ts",
+      "name": "namedTrace",
+      "line": 75,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 2,
+      "functionIds": [
+        "src/utils.ts:76:namedTrace",
+        "src/utils.ts:77:<anonymous>"
+      ]
+    },
+    {
+      "file": "src/utils.ts",
+      "name": "getAnnotatedRequiredRoles",
+      "line": 89,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": [
+        "src/utils.ts:89:getAnnotatedRequiredRoles"
+      ]
+    },
+    {
+      "file": "src/utils.ts",
+      "name": "getUserFromGQLContext",
+      "line": 104,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": [
+        "src/utils.ts:104:getUserFromGQLContext",
+        "src/utils.ts:108:<arg2 of pipe>",
+        "src/utils.ts:109:<arg3 of pipe>"
+      ]
+    },
+    {
+      "file": "src/utils.ts",
+      "name": "getGqlArg",
+      "line": 120,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": [
+        "src/utils.ts:120:getGqlArg",
+        "src/utils.ts:127:<arg2 of pipe>",
+        "src/utils.ts:130:<arg3 of pipe>"
+      ]
+    },
+    {
+      "file": "src/auth/helper.ts",
+      "name": "extractAuthTokensFromCookieHeaders",
+      "line": 169,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 4,
+      "branchSides": 4,
+      "functionIds": [
+        "src/auth/helper.ts:169:extractAuthTokensFromCookieHeaders"
+      ]
+    },
+    {
+      "file": "src/auth/helper.ts",
+      "name": "extractAccessTokensFromCookieHeaders",
+      "line": 194,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 2,
+      "branchSides": 2,
+      "functionIds": [
+        "src/auth/helper.ts:194:extractAccessTokensFromCookieHeaders"
+      ]
+    },
+    {
+      "file": "src/user-collection/input-type.args.ts",
+      "name": "GetUserChildCollectionArgs",
+      "line": 47,
+      "kind": "ClassDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": [
+        "src/user-collection/input-type.args.ts:49:<arg0 of Field>"
+      ]
+    },
+    {
+      "file": "src/user-collection/user-collections.model.ts",
+      "name": "UserCollectionImportResult",
+      "line": 119,
+      "kind": "ClassDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": [
+        "src/user-collection/user-collections.model.ts:121:<arg0 of Field>",
+        "src/user-collection/user-collections.model.ts:126:<arg0 of Field>"
+      ]
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "PrismaClientKnownRequestError",
+      "line": 32,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "PrismaClientUnknownRequestError",
+      "line": 35,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "PrismaClientRustPanicError",
+      "line": 38,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "PrismaClientInitializationError",
+      "line": 41,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "PrismaClientValidationError",
+      "line": 44,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "empty",
+      "line": 51,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "raw",
+      "line": 53,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "Sql",
+      "line": 54,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "Decimal",
+      "line": 62,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "getExtensionContext",
+      "line": 71,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "prismaVersion",
+      "line": 86,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "NullTypes",
+      "line": 104,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespace.ts",
+      "name": "defineExtension",
+      "line": 2685,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "Decimal",
+      "line": 23,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "NullTypes",
+      "line": 26,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "PrismaClientKnownRequestError",
+      "line": 32,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "PrismaClientUnknownRequestError",
+      "line": 35,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "PrismaClientRustPanicError",
+      "line": 38,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "PrismaClientInitializationError",
+      "line": 41,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "PrismaClientValidationError",
+      "line": 44,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "empty",
+      "line": 51,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "raw",
+      "line": 53,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "Sql",
+      "line": 54,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "getExtensionContext",
+      "line": 71,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "prismaVersion",
+      "line": 86,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "name": "defineExtension",
+      "line": 2685,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "branchSidesDeclaredOnly": 0,
+      "branchSides": 0,
+      "functionIds": []
+    },
+    {
+      "file": "src/auth/helper.ts",
+      "name": "extractCookieAsKeyValuesFromHeaders",
+      "line": 133,
+      "kind": "VariableDeclaration",
+      "referencedOnlyByTests": false,
+      "testRefs": [],
+      "deadBecause": "only-referenced-from-dead-code",
+      "referencedFrom": [
+        "src/auth/helper.ts:172",
+        "src/auth/helper.ts:197"
+      ],
+      "branchSidesDeclaredOnly": 7,
+      "branchSides": 7,
+      "functionIds": [
+        "src/auth/helper.ts:133:extractCookieAsKeyValuesFromHeaders",
+        "src/auth/helper.ts:151:<arg0 of cookieStr>",
+        "src/auth/helper.ts:153:<arg0 of cookieStr>"
+      ]
+    }
+  ]
+}

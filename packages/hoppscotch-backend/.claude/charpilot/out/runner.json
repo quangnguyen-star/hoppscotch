@@ -1,0 +1,17 @@
+{
+  "stage": "0-runner",
+  "runner": "jest",
+  "detail": "jest",
+  "action": "alongside",
+  "evidence": [
+    "scripts.test: jest",
+    "dependency jest",
+    "dependency jest-mock-extended",
+    "dependency ts-jest",
+    "dependency jest (package.json block)",
+    "20 test file(s) (src/access-token/access-token.service.spec.ts, src/admin/admin.service.spec.ts, src/auth/auth.service.spec.ts, …)"
+  ],
+  "testFiles": 20,
+  "measuredByStage1": false,
+  "note": "the repo's suite is jest; not measured by stage 1 - the baseline and every coverage number describe the characterization suite, run by our own vitest alongside"
+}

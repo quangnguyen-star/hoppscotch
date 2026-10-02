@@ -1,0 +1,1726 @@
+{
+  "stage": "1-baseline",
+  "recordedAt": "2026-10-02T04:41:23.001Z",
+  "environment": {
+    "node": "v24.21.0",
+    "npm": "11.19.0",
+    "platform": "linux-x64",
+    "gitSha": "63273f8e599e73f0fb38c0739314e8d46b6bc83d",
+    "gitBranch": "characterize/63273f8e5-20261002T043937Z",
+    "gitDirty": true
+  },
+  "install": {
+    "mode": "npm ci --dry-run",
+    "lockfileInSync": false,
+    "note": "lockfile drift: npm warn Unknown project config \"shamefully-hoist\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options. | npm error code EUSAGE | npm error"
+  },
+  "suite": {
+    "exitCode": 0,
+    "state": "no-spec-files",
+    "durationSeconds": 25,
+    "files": 0,
+    "tests": 0,
+    "passed": 0,
+    "failed": 0,
+    "failedFiles": 0,
+    "green": true,
+    "failures": [],
+    "note": "the repo's suite is jest; not measured by stage 1 - the baseline and every coverage number describe the characterization suite, run by our own vitest alongside"
+  },
+  "runner": {
+    "stage": "0-runner",
+    "runner": "jest",
+    "detail": "jest",
+    "action": "alongside",
+    "evidence": [
+      "scripts.test: jest",
+      "dependency jest",
+      "dependency jest-mock-extended",
+      "dependency ts-jest",
+      "dependency jest (package.json block)",
+      "20 test file(s) (src/access-token/access-token.service.spec.ts, src/admin/admin.service.spec.ts, src/auth/auth.service.spec.ts, …)"
+    ],
+    "testFiles": 20,
+    "measuredByStage1": false,
+    "note": "the repo's suite is jest; not measured by stage 1 - the baseline and every coverage number describe the characterization suite, run by our own vitest alongside"
+  },
+  "suiteStandIns": {
+    "mode": "mocked",
+    "names": [
+      "DATA_ENCRYPTION_KEY",
+      "GENERATE_GQL_SCHEMA",
+      "VITE_BASE_URL"
+    ],
+    "suppliedByStaging": []
+  },
+  "coverage": {
+    "provider": "istanbul",
+    "totals": {
+      "statements": {
+        "covered": 0,
+        "total": 11163,
+        "pct": 0
+      },
+      "branches": {
+        "covered": 0,
+        "total": 3059,
+        "pct": 0
+      },
+      "functions": {
+        "covered": 0,
+        "total": 2744,
+        "pct": 0
+      },
+      "lines": {
+        "covered": 0,
+        "total": 10475,
+        "pct": 0
+      }
+    },
+    "perFile": {
+      "src/app.controller.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/app.module.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "cond-expr": 2,
+          "if": 2
+        }
+      },
+      "src/errors.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/gql-schema.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "binary-expr": 2
+        }
+      },
+      "src/main.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "cond-expr": 2,
+          "if": 6,
+          "binary-expr": 2
+        }
+      },
+      "src/utils.ts": {
+        "istanbulArms": 72,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 28,
+        "branchKinds": {
+          "if": 34,
+          "cond-expr": 6,
+          "binary-expr": 20,
+          "switch": 10,
+          "default-arg": 2
+        }
+      },
+      "src/access-token/access-token.controller.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 6,
+        "branchKinds": {
+          "if": 10
+        }
+      },
+      "src/access-token/access-token.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/access-token/access-token.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 18,
+        "branchKinds": {}
+      },
+      "src/access-token/access-token.service.ts": {
+        "istanbulArms": 18,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {
+          "if": 14,
+          "binary-expr": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/access-token/helper.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/access-token/dto/create-access-token.dto.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/admin/admin.model.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/admin/admin.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/admin/admin.resolver.ts": {
+        "istanbulArms": 36,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 58,
+        "branchKinds": {
+          "if": 36
+        }
+      },
+      "src/admin/admin.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 28,
+        "branchKinds": {}
+      },
+      "src/admin/admin.service.ts": {
+        "istanbulArms": 69,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 46,
+        "branchKinds": {
+          "if": 68,
+          "default-arg": 1
+        }
+      },
+      "src/admin/infra.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/admin/infra.resolver.ts": {
+        "istanbulArms": 18,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 69,
+        "branchKinds": {
+          "if": 18
+        }
+      },
+      "src/admin/input-types.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {}
+      },
+      "src/admin/invited-user.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/admin/decorators/gql-admin.decorator.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/admin/guards/gql-admin.guard.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2,
+          "if": 2
+        }
+      },
+      "src/admin/guards/rest-admin.guard.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/auth/auth.controller.ts": {
+        "istanbulArms": 20,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 15,
+        "branchKinds": {
+          "if": 20
+        }
+      },
+      "src/auth/auth.module.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 4,
+          "cond-expr": 6
+        }
+      },
+      "src/auth/auth.service.spec.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 27,
+        "branchKinds": {
+          "if": 2
+        }
+      },
+      "src/auth/auth.service.ts": {
+        "istanbulArms": 39,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 12,
+        "branchKinds": {
+          "if": 36,
+          "switch": 3
+        }
+      },
+      "src/auth/helper.ts": {
+        "istanbulArms": 43,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 11,
+        "branchKinds": {
+          "if": 24,
+          "binary-expr": 15,
+          "cond-expr": 4
+        }
+      },
+      "src/auth/redirect-uri.validator.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 25,
+        "branchKinds": {}
+      },
+      "src/auth/redirect-uri.validator.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "if": 6,
+          "binary-expr": 2
+        }
+      },
+      "src/auth/stateless-state-store.ts": {
+        "istanbulArms": 47,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 6,
+        "branchKinds": {
+          "default-arg": 1,
+          "if": 32,
+          "binary-expr": 12,
+          "cond-expr": 2
+        }
+      },
+      "src/auth/dto/signin-magic.dto.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/auth/guards/github-sso.guard.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/auth/guards/google-sso.guard.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/auth/guards/jwt-auth.guard.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/auth/guards/microsoft-sso.guard.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/auth/guards/rt-jwt-auth.guard.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/auth/strategies/github.strategy.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "binary-expr": 4,
+          "if": 10
+        }
+      },
+      "src/auth/strategies/google.strategy.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "binary-expr": 4,
+          "if": 10
+        }
+      },
+      "src/auth/strategies/jwt.strategy.ts": {
+        "istanbulArms": 18,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 13,
+        "branchKinds": {
+          "binary-expr": 8,
+          "cond-expr": 6,
+          "if": 4
+        }
+      },
+      "src/auth/strategies/microsoft.strategy.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "binary-expr": 4,
+          "if": 10
+        }
+      },
+      "src/auth/strategies/rt-jwt.strategy.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 6,
+          "cond-expr": 2
+        }
+      },
+      "src/decorators/bearer-token.decorator.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/decorators/gql-user.decorator.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/decorators/rt-cookie.decorator.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/generated/prisma/client.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/generated/prisma/enums.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/generated/prisma/internal/class.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {}
+      },
+      "src/generated/prisma/internal/prismaNamespace.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/generated/prisma/internal/prismaNamespaceBrowser.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/guards/gql-auth.guard.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/guards/gql-throttler.guard.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/guards/infra-token.guard.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10,
+          "binary-expr": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/guards/rest-pat-auth.guard.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 8,
+          "binary-expr": 2,
+          "cond-expr": 4
+        }
+      },
+      "src/guards/throttler-behind-proxy.guard.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/health/health.controller.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {}
+      },
+      "src/health/health.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/infra-config/helper.ts": {
+        "istanbulArms": 53,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 24,
+        "branchKinds": {
+          "if": 28,
+          "cond-expr": 12,
+          "binary-expr": 13
+        }
+      },
+      "src/infra-config/infra-config.controller.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/infra-config/infra-config.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/infra-config/infra-config.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/infra-config/infra-config.resolver.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 12,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/infra-config/infra-config.service.spec.ts": {
+        "istanbulArms": 18,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 48,
+        "branchKinds": {
+          "if": 18
+        }
+      },
+      "src/infra-config/infra-config.service.ts": {
+        "istanbulArms": 227,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 47,
+        "branchKinds": {
+          "if": 100,
+          "binary-expr": 59,
+          "switch": 42,
+          "cond-expr": 22,
+          "default-arg": 4
+        }
+      },
+      "src/infra-config/input-args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {}
+      },
+      "src/infra-config/onboarding.controller.ts": {
+        "istanbulArms": 18,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "if": 14,
+          "binary-expr": 4
+        }
+      },
+      "src/infra-token/infra-token.controller.ts": {
+        "istanbulArms": 26,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {
+          "if": 16,
+          "cond-expr": 10
+        }
+      },
+      "src/infra-token/infra-token.model.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 7,
+        "branchKinds": {
+          "cond-expr": 8
+        }
+      },
+      "src/infra-token/infra-token.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/infra-token/infra-token.resolver.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 9,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/infra-token/infra-token.service.ts": {
+        "istanbulArms": 22,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 9,
+        "branchKinds": {
+          "if": 10,
+          "binary-expr": 8,
+          "default-arg": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/infra-token/request-response.dto.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {}
+      },
+      "src/interceptors/access-token.interceptor.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "binary-expr": 2,
+          "if": 4,
+          "cond-expr": 2
+        }
+      },
+      "src/interceptors/infra-token.interceptor.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 2,
+          "binary-expr": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/interceptors/user-last-active-on.interceptor.ts": {
+        "istanbulArms": 22,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {
+          "if": 12,
+          "binary-expr": 8,
+          "cond-expr": 2
+        }
+      },
+      "src/interceptors/user-last-login.interceptor.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/mailer/helper.ts": {
+        "istanbulArms": 30,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "binary-expr": 22,
+          "if": 6,
+          "cond-expr": 2
+        }
+      },
+      "src/mailer/mailer.module.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/mailer/mailer.service.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "switch": 2,
+          "if": 4
+        }
+      },
+      "src/mock-server/mock-request.guard.ts": {
+        "istanbulArms": 65,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 7,
+        "branchKinds": {
+          "if": 44,
+          "binary-expr": 21
+        }
+      },
+      "src/mock-server/mock-server-analytics.service.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 4,
+          "binary-expr": 6,
+          "cond-expr": 2
+        }
+      },
+      "src/mock-server/mock-server-logging.interceptor.ts": {
+        "istanbulArms": 31,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 13,
+        "branchKinds": {
+          "if": 14,
+          "binary-expr": 13,
+          "cond-expr": 4
+        }
+      },
+      "src/mock-server/mock-server.controller.ts": {
+        "istanbulArms": 43,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "if": 32,
+          "binary-expr": 11
+        }
+      },
+      "src/mock-server/mock-server.model.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 8,
+        "branchKinds": {
+          "cond-expr": 8
+        }
+      },
+      "src/mock-server/mock-server.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/mock-server/mock-server.resolver.ts": {
+        "istanbulArms": 24,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 25,
+        "branchKinds": {
+          "if": 18,
+          "binary-expr": 4,
+          "cond-expr": 2
+        }
+      },
+      "src/mock-server/mock-server.service.spec.ts": {
+        "istanbulArms": 146,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 134,
+        "branchKinds": {
+          "if": 146
+        }
+      },
+      "src/mock-server/mock-server.service.ts": {
+        "istanbulArms": 331,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 56,
+        "branchKinds": {
+          "cond-expr": 32,
+          "default-arg": 2,
+          "if": 198,
+          "binary-expr": 99
+        }
+      },
+      "src/mock-server/constants/mock-server-coll-request-example.ts": {
+        "istanbulArms": 1,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "default-arg": 1
+        }
+      },
+      "src/orchestration/sort/sort-team-collection.resolver.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 15,
+        "branchKinds": {
+          "if": 2
+        }
+      },
+      "src/orchestration/sort/sort-user-collection.resolver.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 12,
+        "branchKinds": {
+          "if": 2
+        }
+      },
+      "src/orchestration/sort/sort.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/orchestration/sort/sort.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/orchestration/sort/sort.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 11,
+        "branchKinds": {}
+      },
+      "src/orchestration/sort/sort.service.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "if": 12
+        }
+      },
+      "src/plugins/GQLComplexityPlugin.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "if": 4,
+          "cond-expr": 2
+        }
+      },
+      "src/posthog/posthog.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/posthog/posthog.service.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "if": 6,
+          "cond-expr": 2
+        }
+      },
+      "src/prisma/prisma-error-codes.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/prisma/prisma.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/prisma/prisma.service.ts": {
+        "istanbulArms": 30,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 9,
+        "branchKinds": {
+          "if": 8,
+          "binary-expr": 15,
+          "cond-expr": 6,
+          "default-arg": 1
+        }
+      },
+      "src/published-docs/input-type.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {}
+      },
+      "src/published-docs/published-docs.controller.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/published-docs/published-docs.model.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 11,
+        "branchKinds": {}
+      },
+      "src/published-docs/published-docs.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/published-docs/published-docs.resolver.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 25,
+        "branchKinds": {
+          "if": 14
+        }
+      },
+      "src/published-docs/published-docs.service.spec.ts": {
+        "istanbulArms": 34,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 108,
+        "branchKinds": {
+          "if": 34
+        }
+      },
+      "src/published-docs/published-docs.service.ts": {
+        "istanbulArms": 155,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 29,
+        "branchKinds": {
+          "if": 106,
+          "default-arg": 3,
+          "binary-expr": 14,
+          "cond-expr": 32
+        }
+      },
+      "src/pubsub/pubsub.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/pubsub/pubsub.service.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {}
+      },
+      "src/shortcode/shortcode.model.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {
+          "cond-expr": 6
+        }
+      },
+      "src/shortcode/shortcode.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/shortcode/shortcode.resolver.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 24,
+        "branchKinds": {
+          "if": 8
+        }
+      },
+      "src/shortcode/shortcode.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 40,
+        "branchKinds": {}
+      },
+      "src/shortcode/shortcode.service.ts": {
+        "istanbulArms": 38,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 18,
+        "branchKinds": {
+          "cond-expr": 16,
+          "if": 14,
+          "default-arg": 2,
+          "binary-expr": 6
+        }
+      },
+      "src/team/team-member.resolver.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "if": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/team/team.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/team/team.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/team/team.resolver.ts": {
+        "istanbulArms": 20,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 58,
+        "branchKinds": {
+          "binary-expr": 6,
+          "if": 14
+        }
+      },
+      "src/team/team.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 84,
+        "branchKinds": {}
+      },
+      "src/team/team.service.ts": {
+        "istanbulArms": 46,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 43,
+        "branchKinds": {
+          "cond-expr": 14,
+          "if": 26,
+          "binary-expr": 5,
+          "default-arg": 1
+        }
+      },
+      "src/team-collection/input-type.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 9,
+        "branchKinds": {}
+      },
+      "src/team-collection/team-collection.controller.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 4,
+          "binary-expr": 2
+        }
+      },
+      "src/team-collection/team-collection.model.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "cond-expr": 4
+        }
+      },
+      "src/team-collection/team-collection.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/team-collection/team-collection.resolver.ts": {
+        "istanbulArms": 32,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 61,
+        "branchKinds": {
+          "if": 28,
+          "cond-expr": 2,
+          "binary-expr": 2
+        }
+      },
+      "src/team-collection/team-collection.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 137,
+        "branchKinds": {}
+      },
+      "src/team-collection/team-collection.service.ts": {
+        "istanbulArms": 192,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 54,
+        "branchKinds": {
+          "binary-expr": 22,
+          "if": 120,
+          "cond-expr": 42,
+          "default-arg": 8
+        }
+      },
+      "src/team-collection/guards/gql-collection-team-member.guard.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10
+        }
+      },
+      "src/team-environments/gql-team-env-team.guard.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10
+        }
+      },
+      "src/team-environments/input-type.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {}
+      },
+      "src/team-environments/team-environments.model.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {}
+      },
+      "src/team-environments/team-environments.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/team-environments/team-environments.resolver.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 27,
+        "branchKinds": {
+          "if": 10
+        }
+      },
+      "src/team-environments/team-environments.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 36,
+        "branchKinds": {}
+      },
+      "src/team-environments/team-environments.service.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 12,
+        "branchKinds": {
+          "if": 6
+        }
+      },
+      "src/team-environments/team.resolver.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/team-invitation/input-type.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {}
+      },
+      "src/team-invitation/team-invitation.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/team-invitation/team-invitation.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/team-invitation/team-invitation.resolver.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 25,
+        "branchKinds": {
+          "if": 10
+        }
+      },
+      "src/team-invitation/team-invitation.service.ts": {
+        "istanbulArms": 24,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 9,
+        "branchKinds": {
+          "if": 22,
+          "binary-expr": 2
+        }
+      },
+      "src/team-invitation/team-invite-team-owner.guard.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10,
+          "cond-expr": 2
+        }
+      },
+      "src/team-invitation/team-invite-viewer.guard.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10,
+          "cond-expr": 2
+        }
+      },
+      "src/team-invitation/team-invitee.guard.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 8,
+          "cond-expr": 2
+        }
+      },
+      "src/team-invitation/team-teaminvite-ext.resolver.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/team-request/input-type.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {}
+      },
+      "src/team-request/team-request.model.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "cond-expr": 4
+        }
+      },
+      "src/team-request/team-request.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/team-request/team-request.resolver.ts": {
+        "istanbulArms": 16,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 48,
+        "branchKinds": {
+          "if": 16
+        }
+      },
+      "src/team-request/team-request.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 74,
+        "branchKinds": {}
+      },
+      "src/team-request/team-request.service.ts": {
+        "istanbulArms": 95,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 25,
+        "branchKinds": {
+          "if": 62,
+          "default-arg": 3,
+          "cond-expr": 24,
+          "binary-expr": 6
+        }
+      },
+      "src/team-request/guards/gql-request-team-member.guard.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10,
+          "binary-expr": 2
+        }
+      },
+      "src/team/decorators/requires-team-role.decorator.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/team/guards/gql-team-member.guard.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10,
+          "cond-expr": 4
+        }
+      },
+      "src/team/guards/rest-team-member.guard.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 10,
+          "cond-expr": 2
+        }
+      },
+      "src/types/AuthTokens.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/CollectionFolder.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/Email.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/InfraConfig.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/RequestTypes.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/SortOptions.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/WorkspaceTypes.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 1,
+        "branchKinds": {}
+      },
+      "src/types/input-types.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {}
+      },
+      "src/user/user.model.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "cond-expr": 6
+        }
+      },
+      "src/user/user.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/user/user.resolver.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 20,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/user/user.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 75,
+        "branchKinds": {}
+      },
+      "src/user/user.service.ts": {
+        "istanbulArms": 41,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 45,
+        "branchKinds": {
+          "cond-expr": 24,
+          "if": 12,
+          "switch": 3,
+          "binary-expr": 2
+        }
+      },
+      "src/user-collection/input-type.args.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {}
+      },
+      "src/user-collection/user-collection.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/user-collection/user-collection.resolver.ts": {
+        "istanbulArms": 30,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 66,
+        "branchKinds": {
+          "if": 28,
+          "cond-expr": 2
+        }
+      },
+      "src/user-collection/user-collection.service.spec.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 131,
+        "branchKinds": {
+          "if": 2
+        }
+      },
+      "src/user-collection/user-collection.service.ts": {
+        "istanbulArms": 193,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 47,
+        "branchKinds": {
+          "cond-expr": 36,
+          "default-arg": 7,
+          "binary-expr": 20,
+          "if": 130
+        }
+      },
+      "src/user-collection/user-collections.model.ts": {
+        "istanbulArms": 12,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 13,
+        "branchKinds": {
+          "cond-expr": 12
+        }
+      },
+      "src/user-environment/user-environments.model.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 3,
+        "branchKinds": {}
+      },
+      "src/user-environment/user-environments.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/user-environment/user-environments.resolver.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 28,
+        "branchKinds": {
+          "if": 10
+        }
+      },
+      "src/user-environment/user-environments.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 33,
+        "branchKinds": {}
+      },
+      "src/user-environment/user-environments.service.ts": {
+        "istanbulArms": 26,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {
+          "if": 22,
+          "binary-expr": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/user-environment/user.resolver.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 6,
+        "branchKinds": {
+          "if": 6,
+          "cond-expr": 2
+        }
+      },
+      "src/user-history/user-history-feature-flag.guard.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "if": 4,
+          "cond-expr": 2
+        }
+      },
+      "src/user-history/user-history.model.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "cond-expr": 6
+        }
+      },
+      "src/user-history/user-history.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/user-history/user-history.resolver.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 28,
+        "branchKinds": {
+          "if": 8
+        }
+      },
+      "src/user-history/user-history.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 38,
+        "branchKinds": {}
+      },
+      "src/user-history/user-history.service.ts": {
+        "istanbulArms": 14,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 10,
+        "branchKinds": {
+          "if": 12,
+          "cond-expr": 2
+        }
+      },
+      "src/user-history/user.resolver.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 6,
+        "branchKinds": {
+          "if": 4,
+          "cond-expr": 2
+        }
+      },
+      "src/user-request/input-type.args.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 7,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/user-request/user-request.model.ts": {
+        "istanbulArms": 8,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 6,
+        "branchKinds": {
+          "cond-expr": 8
+        }
+      },
+      "src/user-request/user-request.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/user-request/user-request.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 58,
+        "branchKinds": {}
+      },
+      "src/user-request/user-request.service.ts": {
+        "istanbulArms": 86,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 19,
+        "branchKinds": {
+          "cond-expr": 24,
+          "if": 52,
+          "binary-expr": 9,
+          "default-arg": 1
+        }
+      },
+      "src/user-request/resolvers/user-collection.resolver.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "if": 2,
+          "cond-expr": 2
+        }
+      },
+      "src/user-request/resolvers/user-request.resolver.ts": {
+        "istanbulArms": 18,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 36,
+        "branchKinds": {
+          "if": 18
+        }
+      },
+      "src/user-settings/user-settings.model.ts": {
+        "istanbulArms": 2,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 2,
+        "branchKinds": {
+          "cond-expr": 2
+        }
+      },
+      "src/user-settings/user-settings.module.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 0,
+        "branchKinds": {}
+      },
+      "src/user-settings/user-settings.resolver.ts": {
+        "istanbulArms": 4,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 11,
+        "branchKinds": {
+          "if": 4
+        }
+      },
+      "src/user-settings/user-settings.service.spec.ts": {
+        "istanbulArms": 0,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 12,
+        "branchKinds": {}
+      },
+      "src/user-settings/user-settings.service.ts": {
+        "istanbulArms": 10,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 5,
+        "branchKinds": {
+          "if": 8,
+          "cond-expr": 2
+        }
+      },
+      "src/user-settings/user.resolver.ts": {
+        "istanbulArms": 6,
+        "istanbulArmsCovered": 0,
+        "istanbulFunctions": 4,
+        "branchKinds": {
+          "if": 4,
+          "cond-expr": 2
+        }
+      }
+    }
+  },
+  "stagingEnv": {
+    "state": "iac-not-found",
+    "iac": null,
+    "iacFrom": null,
+    "service": "hoppscotch-backend",
+    "serviceFrom": null,
+    "namespace": "staging",
+    "resolvedFrom": null,
+    "sources": [],
+    "vars": 0,
+    "scopes": {},
+    "databaseUrl": {
+      "present": false,
+      "from": null,
+      "scope": null
+    },
+    "findings": [
+      "no qode-iac checkout with a manifests/ directory beside the target - the deployed environment cannot be resolved, so stage 4 would run against whatever the shell happens to hold. Pass --iac <path> or set CHARPILOT_IAC"
+    ],
+    "unverified": [],
+    "report": "out/staging-env.json",
+    "standIns": {
+      "mode": "mocked",
+      "names": [
+        "DATA_ENCRYPTION_KEY",
+        "GENERATE_GQL_SCHEMA",
+        "VITE_BASE_URL"
+      ]
+    }
+  },
+  "recordingWillBe": {
+    "live": false,
+    "why": "CHARPILOT_EXPECTED_DB=none - this service has no database, so every boundary is answered by a double"
+  },
+  "envDefaults": {
+    "file": null,
+    "note": "no env schema found at any of src/env.ts, src/env/index.ts, src/config/env.ts, src/configs/env.ts, src/common/env.ts, nor any source file that parses process.env through a z.object schema"
+  },
+  "egressHosts": {
+    "fromDefaults": [],
+    "fromSource": [
+      "1234.mock.backend-hoppscotch.io",
+      "api.example.com",
+      "attacker.com",
+      "auth0.com",
+      "backend.hoppscotch.io",
+      "docs.example.com",
+      "docs.hoppscotch.io",
+      "dummy.com",
+      "emailregex.com",
+      "en.wikipedia.org",
+      "eu.posthog.com",
+      "example.com",
+      "github.com",
+      "google.github.io",
+      "hoppscotch.com",
+      "nodemailer.com",
+      "oauth2.googleapis.com",
+      "old.example.com",
+      "pris.ly",
+      "proxy.hoppscotch.io",
+      "stackoverflow.com",
+      "staging.example.com",
+      "subdomain.example.com",
+      "test-subdomain.mock.hopp.io",
+      "updated.example.com",
+      "www.prisma.io"
+    ]
+  }
+}
