@@ -44,6 +44,17 @@
    "rows": 23,
    "exit": 75,
    "at": "2026-10-02T07:48:17Z"
+  },
+  {
+   "run": "20261002T043937Z",
+   "round": 4,
+   "kind": "bank",
+   "seconds": 3.8,
+   "gate": null,
+   "recorded": null,
+   "rows": null,
+   "exit": 0,
+   "at": "2026-10-02T07:48:24Z"
   }
  ]
 }
